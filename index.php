@@ -1,5 +1,5 @@
 <?php 
 
-    echo 'hai';
+    include_once('index.html');
 
 ?>
