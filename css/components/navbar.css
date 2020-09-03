@@ -1,0 +1,102 @@
+nav {
+    transition: all .3s;
+    z-index: 1000;
+}
+.navbar {
+    width: 100%;
+}
+.nav-ul {
+    list-style: none;
+}
+.brand-title {
+    transition: all .3s;
+}
+.menu ul li a {
+    color: white;
+    text-decoration: none !important;
+}
+.menu ul li {
+    position: relative;
+}
+#nav-toggler i {
+    color: white;
+}
+.menu ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    border-radius: 10px;
+    right: 10%;
+    display: inline-block;
+    transition: all .3s;
+    bottom: 0px;
+    text-align: center;
+    background-color: white;
+}
+.menu ul li:hover::after {
+    width: 80%;
+}
+.buttons-auth {
+    position: relative;
+    top: -7px;
+}
+.scrolled-btn-signin {
+    background-color: #1D69D6;
+    color: white;
+}
+.scrolled-btn-signup {
+    border: 2px solid #1D69D6 !important;
+    color: #1D69D6 !important;
+    box-sizing: border-box !important;
+    padding: .35rem 1.5rem;
+}
+@media screen and (max-width: 800px) {
+    .buttons-auth {
+        position: relative;
+        top: 7px;
+    }
+    #btn-signin {
+        background-color: #1D69D6;
+        color: white;
+    }
+    #btn-signup {
+        border: 2px solid #1D69D6 !important;
+        color: #1D69D6 !important;
+        box-sizing: border-box !important;
+        padding: .35rem 1.5rem;
+    }
+    .menu {
+        width: 100%;
+        top: 75px;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        background-color: white;
+        text-align: right;
+    }
+    .menu ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        position: absolute;
+        border-radius: 10px;
+        right: 2%;
+        display: inline-block;
+        transition: all .3s;
+        bottom: 0px;
+        text-align: center;
+        background-color: #1D69D6;
+    }
+    .menu ul li:hover::after {
+        width: 30%;
+    }
+    .menu li {
+        padding: 15px;
+        transition: all .3s;
+        font-size: 1rem;
+    }
+    .menu ul li a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+}
