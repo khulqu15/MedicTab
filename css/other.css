@@ -70,3 +70,196 @@
     right: 0px;
     background: white;
 }
+
+.live-banner {
+    border-top-right-radius: 42px;
+    border-bottom-right-radius: 42px;
+    box-shadow: 100px 1px 100px rgba(0, 0, 0, 0.25);
+}
+.img-vt {
+    position: absolute;
+    bottom: 0;
+    width: 110%;
+    left: -100px;
+}
+
+.img-vt-sm {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 350px;
+}
+
+.rect-left-solid {
+    background-color: rgba(255, 225, 255, 0.45);
+    position: absolute;
+    left: -100px;
+    bottom: -70px;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    transform: rotate(45deg);
+}
+
+.rect-right-border {
+    background-color: rgba(255, 225, 255, 0.1);
+    border: 16px solid rgba(255, 225, 255, 0.45);
+    position: absolute;
+    right: -100px;
+    top: -50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    transform: rotate(65deg);
+}
+
+.v-img {
+    position: absolute;
+    bottom: -100px;
+    width: 300px;
+    left: 150px;
+}
+
+.r-img {
+    position: absolute;
+    z-index: 5;
+    bottom: -100px;
+    width: 240px;
+    right: 160px;   
+}
+
+@media screen and (max-width: 576px) {
+    .v-img {
+        position: absolute;
+        bottom: -100px;
+        width: 300px;
+        left: 30px;
+    }
+    
+    .r-img {
+        position: absolute;
+        z-index: 5;
+        bottom: -100px;
+        width: 240px;
+        right: 30px;   
+    }
+}
+
+
+.card-shop {
+    border-radius: 16px;
+    height: 270px;
+}
+.card-shop .card-image-top {
+    background-color: #076945;
+}
+.card-shop .card-image-top img {
+    object-fit: cover;
+    transition: all .3s;
+}
+.card-shop .card-image-top:hover img {
+    transform: scale(1.1);
+    opacity: .5;
+}
+
+.card-shop .card-body {
+    bottom: 0;
+    left: 0;
+    right: 0 !important;
+    border-radius: 16px;
+}
+.btn-price-shop {
+    background-color: #FFD720;
+    border-radius: 13px;
+    width: 50px;
+    position: relative;
+    top: -20px;
+    z-index: 5;
+}
+.btn-cart-shop {
+    background-color: #ffe571;
+    border-radius: 13px;
+    position: relative;
+    width: 50px;
+    z-index: 10;
+}
+.btn-view-shop {
+    background-color: #1DD693;
+    border-radius: 13px;
+    position: relative;
+    width: 50px;
+    visibility: hidden;
+    top: -39px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.buttons-shop {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+.card-shop-p {
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+    bottom: -10px;
+    opacity: 0;
+}
+.card-body:hover .card-shop-p {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-body:hover .btn-view-shop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-course {
+    border-radius: 16px;
+    transition: all .3s;
+}
+
+.card-course:hover {
+    cursor: pointer;
+    box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.shadow-search {
+    box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.1);
+}
+.btn-search-article {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -35px;
+    top: -13px;
+}
+
+.articles-content {
+    border-top-left-radius: 50rem;
+    background-color: #c6d4fb;
+    border-bottom-left-radius: 50rem;
+}
+
+.card-image-article {
+    width: 100%;
+    height: 180px;
+    background-color: #076945;
+}
+.card-image-article img {
+    transition: all .3s;
+}
+
+.card-image-article:hover img {
+    transform: scale(1.1);
+    opacity: .5;
+}
