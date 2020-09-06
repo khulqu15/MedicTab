@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         let top = window.pageYOffset || document.documentElement.scrollTop;
-        if(top >= 150) {
+        if(top >= 50) {
             $('nav').addClass('bg-white animate__animated animate__fadeInDown');
             $('.brand-title').addClass('text-black');
             $('#nav-toggler i').addClass('text-black');

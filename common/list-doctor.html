@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors | Medictab</title>
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/other.css">
+</head>
+<body>
+    <nav class="navbar py-4 px-3 p-fixed t-0 w-100">
+        <div class="d-flex">
+            <div class="brand ml-4">
+                <div class="d-flex text-dark">
+                <h3 class="h brand-title">MedicTab</h3>
+            </div>
+            </div>
+            <div class="menu p-absolute text-center d-md-none r-0 pr-7" id="nav-menu">
+                <ul class="nav-ul d-flex w-100 d-md-inline-block">
+                    <li class="px-3"><a href="../index.html" class="nav-link" style="color: black !important;">Home</a></li>
+                    <li class="px-3"><a href="consultation.html" class="nav-link active-menu" style="color: black !important;">Consultation</a></li>
+                    <li class="px-3"><a href="meet.html" class="nav-link" style="color: black !important;">Meet</a></li>
+                    <li class="px-3"><a href="#" class="nav-link" style="color: black !important;">Course</a></li>
+                    <li class="px-3"><a href="#" class="nav-link" style="color: black !important;">Articles</a></li>
+                    <div class="px-3 buttons-auth">
+                        <button class="border-0 py-2 px-5 btn-primary shadow-black" id="btn-signin">SignIn</button>
+                        <button class="rad py-2 text-primary px-4 btn-transparent border-primary" id="btn-signup">SignUp</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-toggler d-none d-md-inline-block p-absolute r-0 mr-8" id="nav-toggler">
+                <i class="fas fa-bars text-black" style="color: black !important;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-lg pt-8">
+        <div class="container pt-8">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <div>
+                        <input type="text" class="border-0 bg-gainsboro-light rad-md w-100 p-3" style="box-sizing: border-box;" placeholder="Cari dokter">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                    <div>
+                        <select name="tingkat" id="tingkat" class="border-0 bg-gainsboro-light rad-md w-100 p-3">
+                            <option value="">Semua tingkat</option>
+                            <option value="spesialis" selected>Spesialis</option>
+                            <option value="biasa">Biasa</option>
+                        </select>    
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                    <div>
+                        <select name="tingkat" id="tingkat" class="border-0 bg-gainsboro-light rad-md w-100 p-3">
+                            <option value="">Semua jenis</option>
+                            <option value="">Penyakit pernafasan</option>
+                            <option value="">Penyakit organ dalam</option>
+                        </select>    
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" id="displayGet">
+                <div class="col-lg-3 query-get-doctor col-md-4 col-sm-6 col-xs-12 bg-primary rad-pill p-3 pl-4 p-relative" id="tingkat_get">
+                    <h4 class="p mb-0 text-white">Spesialis</h4>
+                    <div class="button-close-hide p-absolute" id="btn_tingkat_close"><i class="fas fa-times"></i></div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg-4 col-sm-6 col-xs-12 col-md-4">
+                    <div class="w-100 rad-md card-doctors overflow-hidden" onclick="window.location.href = '#'" style="box-sizing: border-box;">
+                        <div class="img-card-doctors rad-md p-relative">
+                            <div class="img p-absolute" style="background-image: url('../img/doctors/teamwork.png');"></div>
+                        </div>
+                        <div class="body-card-doctors p-relative w-100 bg-white pt-2 p-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="photo-doctor overflow-hidden">
+                                        <img src="../img/doctors/aku.png" class="w-100 h-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h mb-0">Dr. Khusnul Khuluq</h3>
+                                    <p class="p" style="font-size: .8rem;">Spesialis Pilek 
+                                        <span class="ml-3"><i class="fas fa-map-marker-alt text-primary"></i> Purwosari</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 col-md-4">
+                    <div class="w-100 rad-md card-doctors overflow-hidden" onclick="window.location.href = '#'" style="box-sizing: border-box;">
+                        <div class="img-card-doctors rad-md p-relative">
+                            <div class="img p-absolute" style="background-image: url('../img/doctors/teamwork.png');"></div>
+                        </div>
+                        <div class="body-card-doctors p-relative w-100 bg-white pt-2 p-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="photo-doctor overflow-hidden">
+                                        <img src="../img/doctors/febri.PNG" class="w-100 h-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h mb-0">Dr. Febri Barkah</h3>
+                                    <p class="p" style="font-size: .8rem;">Spesialis Panu
+                                        <span class="ml-3"><i class="fas fa-map-marker-alt text-primary"></i> Malang</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 col-md-4">
+                    <div class="w-100 rad-md card-doctors overflow-hidden" onclick="window.location.href = '#'" style="box-sizing: border-box;">
+                        <div class="img-card-doctors rad-md p-relative">
+                            <div class="img p-absolute" style="background-image: url('../img/doctors/teamwork.png');"></div>
+                        </div>
+                        <div class="body-card-doctors p-relative w-100 bg-white pt-2 p-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="photo-doctor overflow-hidden">
+                                        <img src="../img/doctors/mada.PNG" class="h-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h mb-0">Dr. Ade Mada</h3>
+                                    <p class="p" style="font-size: .8rem;">Spesialis Cacingan
+                                        <span class="ml-3"><i class="fas fa-map-marker-alt text-primary"></i> Putran</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6 col-xs-12 col-md-4">
+                    <div class="w-100 rad-md card-doctors overflow-hidden" onclick="window.location.href = '#'" style="box-sizing: border-box;">
+                        <div class="img-card-doctors rad-md p-relative">
+                            <div class="img p-absolute" style="background-image: url('../img/consultation/consultation.png');"></div>
+                        </div>
+                        <div class="body-card-doctors p-relative w-100 bg-white pt-2 p-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="photo-doctor overflow-hidden">
+                                        <img src="../img/doctors/ilham.png" class="w-100 h-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h mb-0">Dr. Ilham .M</h3>
+                                    <p class="p" style="font-size: .8rem;">Dokter Hewan
+                                        <span class="ml-3"><i class="fas fa-map-marker-alt text-primary"></i> Pucangsari</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 col-md-4">
+                    <div class="w-100 rad-md card-doctors overflow-hidden" onclick="window.location.href = '#'" style="box-sizing: border-box;">
+                        <div class="img-card-doctors rad-md p-relative">
+                            <div class="img p-absolute" style="background-image: url('../img/articles/1.png');"></div>
+                        </div>
+                        <div class="body-card-doctors p-relative w-100 bg-white pt-2 p-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="photo-doctor overflow-hidden">
+                                        <img src="../img/doctors/valen.png" class="w-100 h-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h mb-0">Dr. Valen .N</h3>
+                                    <p class="p" style="font-size: .8rem;">Spesialis Jiwa
+                                        <span class="ml-3"><i class="fas fa-map-marker-alt text-primary"></i> Sengon</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 col-md-4">
+                    <div class="w-100 rad-md card-doctors overflow-hidden" onclick="window.location.href = '#'" style="box-sizing: border-box;">
+                        <div class="img-card-doctors rad-md p-relative">
+                            <div class="img p-absolute" style="background-image: url('../img/articles/2.png');"></div>
+                        </div>
+                        <div class="body-card-doctors p-relative w-100 bg-white pt-2 p-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="photo-doctor overflow-hidden">
+                                        <img src="../img/doctors/male.svg" class="w-100 h-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h mb-0">Dr. Robert</h3>
+                                    <p class="p" style="font-size: .8rem;">Spesialis Pencernaan
+                                        <span class="ml-3"><i class="fas fa-map-marker-alt text-primary"></i> Purwosari</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 col-md-4">
+                    <div class="w-100 rad-md card-doctors overflow-hidden" onclick="window.location.href = '#'" style="box-sizing: border-box;">
+                        <div class="img-card-doctors rad-md p-relative">
+                            <div class="img p-absolute" style="background-image: url('../img/home/welcome.png');"></div>
+                        </div>
+                        <div class="body-card-doctors p-relative w-100 bg-white pt-2 p-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="photo-doctor overflow-hidden">
+                                        <img src="../img/doctors/male.svg" class="w-100 h-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h mb-0">Dr. Vaas montenegro</h3>
+                                    <p class="p" style="font-size: .8rem;">Spesialis Pilek 
+                                        <span class="ml-3"><i class="fas fa-map-marker-alt text-primary"></i> Sumatra</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 col-md-4">
+                    <div class="w-100 rad-md card-doctors overflow-hidden" onclick="window.location.href = '#'" style="box-sizing: border-box;">
+                        <div class="img-card-doctors rad-md p-relative">
+                            <div class="img p-absolute" style="background-image: url('../img/consultation/consultation.png');"></div>
+                        </div>
+                        <div class="body-card-doctors p-relative w-100 bg-white pt-2 p-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="photo-doctor overflow-hidden">
+                                        <img src="../img/doctors/female.svg" class="w-100 h-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h mb-0">Dr. Liza</h3>
+                                    <p class="p" style="font-size: .8rem;">Spesialis Panu
+                                        <span class="ml-3"><i class="fas fa-map-marker-alt text-primary"></i> Malang</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 col-md-4">
+                    <div class="w-100 rad-md card-doctors overflow-hidden" onclick="window.location.href = '#'" style="box-sizing: border-box;">
+                        <div class="img-card-doctors rad-md p-relative">
+                            <div class="img p-absolute" style="background-image: url('../img/articles/2.png');"></div>
+                        </div>
+                        <div class="body-card-doctors p-relative w-100 bg-white pt-2 p-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="photo-doctor overflow-hidden">
+                                        <img src="../img/doctors/male.svg" class="w-100 h-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h mb-0">Dr. Jason .B</h3>
+                                    <p class="p" style="font-size: .8rem;">Spesialis HIV
+                                        <span class="ml-3"><i class="fas fa-map-marker-alt text-primary"></i> Purwosari</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right my-3">
+                    <button class="btn btn-white border-0 rad-sm p-3 py-2"><i class="fas fa-caret-left"></i></button>
+                    <button class="btn btn-primary shadow-primary border-0 rad-sm p-3 py-2">1</button>
+                    <button class="btn btn-primary-light border-0 rad-sm p-3 py-2">2</button>
+                    <button class="btn btn-white border-0 rad-sm p-3 py-2"><i class="fas fa-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-lg py-5">
+        <div class="text-center text-primary-light">
+            <h2 class="h">MedicTab</h2>
+            <p class="mt-4">
+                <span class="mx-3 my-2 d-inline-block d-md-block">Home</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Consultation</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Meet</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Course</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Articles</span>
+            </p>
+            <p class="mt-4">
+                <span><i class="fab fa-instagram mx-3"></i></span>
+                <span><i class="fab fa-facebook mx-3"></i></span>
+                <span><i class="fab fa-twitter mx-3"></i></span>
+            </p>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-xs-6 text-left">
+                        <p>English</p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p>Mohammad Khusnul Khuluq</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/responsive.js"></script>
+<script src="../js/components/navbar.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#btn_tingkat_close').click(function() {
+            $('#tingkat_get').addClass('d-none')
+        })
+    });
+</script>
+</html>

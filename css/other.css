@@ -263,3 +263,218 @@
     transform: scale(1.1);
     opacity: .5;
 }
+
+.avatar-doctor {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100px;
+    background-color: #1DD693;
+}
+.doctor {
+    transition: all .2s;
+    background-color: white;
+}
+.doctor:hover {
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+.avatar-doctor img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.list-doctors {
+    max-height: 500px;
+    overflow-y: auto;
+}
+.blured-img-doctor {
+    filter: blur(5px);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    top: 20px;
+    left: 5px;
+    opacity: .5;
+}
+.chatting-content {
+    position: relative;
+    max-height: 505px;
+    min-height: 505px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.chatmessages {    
+    width: 100%;
+    max-height: 449px;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.text-chat {
+    display: inline-block; 
+    max-width: 350px; 
+    min-width: 100px;
+    transition: all .3s;
+}
+.text-chat:hover {
+    background-color: rgb(241, 241, 241) !important;
+    cursor: pointer;
+}
+.time-chat {
+    bottom: 5px; 
+    font-size: .65rem;
+    right: 8px;
+}
+.dropdown-chat-toggle {
+    z-index: 0;
+    top: 0px;
+    padding: .5rem .65rem;
+    border-radius: 16px;
+    opacity: 0;
+    transition: all .3s;
+    right: 0px;
+    background-color: white;
+}
+
+.text-chat:hover .dropdown-chat-toggle {
+    right: 0px;
+    opacity: 1;
+    background-color: rgb(241, 241, 241) !important;
+}
+.chat-dropdown {
+    position: absolute;
+    min-width: 100px;
+    background-color: white;
+    border-radius: 8px;
+    top: 45px;
+    border: 1px solid rgb(255, 255, 255);
+    right: -33px;
+    display: none;
+}
+.chat-dropdown ul {
+    list-style: none;
+}
+.chat-dropdown ul li {
+    padding: 10px 10px 10px 10px;
+}
+
+.chat-dropdown ul li#report {
+    border-radius: 8px;
+    background-color: rgb(255, 203, 203);
+}
+
+.arrow-up-dropdown {
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid rgb(255, 255, 255);
+}
+.dropTriangle {
+    top: -17px;
+}
+#toggleChat {
+    bottom: 0;
+    left: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+#chatList {
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    #chatList {
+        position: absolute;
+        top: 0;
+        left: -1100px;
+        opacity: 0;
+        transition: all .3s;
+    }
+    .chatListActive {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+}
+
+.close-rating {
+    cursor: pointer;
+}
+.star-rating {
+    cursor: pointer;
+}
+
+.button-close-hide {
+    top: 12px;
+    right: 12px;
+    bottom: 0px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    visibility: hidden;
+    opacity: 0;
+    height: 30px;
+    border-radius: 100rem;
+    background-color: white;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.query-get-doctor {
+    transition: all .3s;
+}
+.query-get-doctor:hover {
+    background-color: #10458f !important;
+}
+.query-get-doctor:hover .button-close-hide {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-doctors {
+    box-shadow: 0px 11px 11px -6px rgba(10, 10, 10, 0.1);
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+}
+.card-doctors:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 11px 11px -4px rgba(10, 10, 10, 0.2);
+
+}
+.img-card-doctors {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #1DD693;
+}
+.img-card-doctors .img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    right: 0;
+    transition: all .3s;
+    background-position: center;
+    background-size: cover;
+}
+.img-card-doctors .img:hover {
+    opacity: .5;
+    transform: scale(1.1);
+}
+.photo-doctor {
+    width: 80px;
+    height: 80px;
+    border-radius: 100rem;
+    background-color: white;
+    position: absolute;
+    top: -30px;
+    border: 5px solid white;
+}

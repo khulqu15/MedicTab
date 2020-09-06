@@ -24,7 +24,7 @@
             <div class="menu p-absolute text-center d-md-none r-0 pr-7" id="nav-menu">
                 <ul class="nav-ul d-flex w-100 d-md-inline-block">
                     <li class="px-3"><a href="../index.html" class="nav-link">Home</a></li>
-                    <li class="px-3"><a href="consultation.html" class="nav-link">Consultation</a></li>
+                    <li class="px-3"><a href="consultation.html" class="nav-link active-menu">Consultation</a></li>
                     <li class="px-3"><a href="meet.html" class="nav-link">Meet</a></li>
                     <li class="px-3"><a href="#" class="nav-link">Course</a></li>
                     <li class="px-3"><a href="#" class="nav-link">Articles</a></li>
@@ -44,34 +44,252 @@
         <div class="overlay-primary"></div>
         <div class="row py-8 px-5 my-8">
             <div class="col-md-12 p-relative text-center col-sm-12 col-xs-12 py-8 px-8">
-                <h1 class="h text-white mb-0" style="font-size: 2.5rem;">Start with us <br> To Consultation </h1>
+                <h1 class="h text-white mb-0" style="font-size: 2.5rem;">Consultation with us</h1>
+                <button class="btn btn-white px-6 py-2 border-0 m-2" id="startChat">Start</button>
+                <button class="btn btn-transparent text-white border-white px-5 py-2 border-0 m-2 bold" onclick="document.location.href = 'list-doctor.html'">List doctor</button>
             </div>
         </div>
+        <button class="p-absolute btn btn-white border-0 py-2 px-4 d-md-inline-block d-none" id="toggleChat">Show Chat</button>
     </div>
 
-    <div class="container-lg p-relative overflow-hidden">
-        <div class="rect-decor" style="bottom: 0px; opacity: .5;"></div>
-        <div class="rect-decor" style="opacity: .5;"></div>
-        <img src="../img/illust/vector.png" class="p-absolute w-75" style="bottom: 0px;" alt="">
-        <div class="container p-relative py-8">
-            <div class="text-center p-relative" style="z-index: 100;">
-                <h3 class="h mb-0 text-gainsboro">Welcome to MedicTab</h3>
-                <h1 class="h text-black">Consultation with doctor now</h1>
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-xs-12"></div>
-                    <div class="col-lg-8 col-md-12 col-xs-12">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione consectetur eos vel dolor hic at beatae ipsum earum, saepe provident laudantium, repellendus eius sunt facere? Id labore corporis perferendis. Eaque.</p>
+    <div class="container-lg p-relative bg-white">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 bg-white" id="chatList" style="z-index: 10; top: 0;">
+                <div class="input-search mb-2 mt-4 mx-3">
+                    <input type="text" class="border-0 w-100 py-3 px-3" style="border-bottom: 2px solid gainsboro; box-sizing: border-box;" placeholder="Cari dokter">
+                </div>
+                <div class="list-doctors">
+                    <div class="doctor w-100 bg-gainsboro-light">
+                        <div class="row py-4 px-4">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 p-relative">
+                                <img class="p-absolute blured-img-doctor" src="../img/doctors/aku.png" alt="">
+                                <div class="avatar-doctor p-relative">
+                                    <img src="../img/doctors/aku.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <h4 class="h mb-0 mt-1">Dr. Khusnul Khuluq</h4>
+                                <p class="p" style="font-size: .8rem;">Spesialis Pilek</p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center pt-3">
+                                <i class="fas fa-comment text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor w-100">
+                        <div class="row py-4 px-4">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 p-relative">
+                                <img class="p-absolute blured-img-doctor" src="../img/doctors/febri.PNG" alt="">
+                                <div class="avatar-doctor p-relative">
+                                    <img src="../img/doctors/febri.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <h4 class="h mb-0 mt-1">Dr. Febri Barkah</h4>
+                                <p class="p" style="font-size: .8rem;">Spesialis Panu</p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center pt-3">
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor w-100">
+                        <div class="row py-4 px-4">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 p-relative">
+                                <img class="p-absolute blured-img-doctor" src="../img/doctors/mada.PNG" alt="">
+                                <div class="avatar-doctor p-relative">
+                                    <img src="../img/doctors/mada.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <h4 class="h mb-0 mt-1">Dr. Ade Mada</h4>
+                                <p class="p" style="font-size: .8rem;">Spesialis Cacingan</p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center pt-3">
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor w-100">
+                        <div class="row py-4 px-4">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 p-relative">
+                                <img class="p-absolute blured-img-doctor" src="../img/doctors/ilham.png" alt="">
+                                <div class="avatar-doctor p-relative">
+                                    <img src="../img/doctors/ilham.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <h4 class="h mb-0 mt-1">Dr. Ilham .M</h4>
+                                <p class="p" style="font-size: .8rem;">Spesialis Cacingan</p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center pt-3">
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor w-100">
+                        <div class="row py-4 px-4">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 p-relative">
+                                <img class="p-absolute blured-img-doctor" src="../img/doctors/valen.png" alt="">
+                                <div class="avatar-doctor p-relative">
+                                    <img src="../img/doctors/valen.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <h4 class="h mb-0 mt-1">Dr. Valen .N</h4>
+                                <p class="p" style="font-size: .8rem;">Spesialis Cacingan</p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center pt-3">
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor w-100">
+                        <div class="row py-4 px-4">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 p-relative">
+                                <img class="p-absolute blured-img-doctor" src="../img/doctors/valen.png" alt="">
+                                <div class="avatar-doctor p-relative">
+                                    <img src="../img/doctors/male.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <h4 class="h mb-0 mt-1">Dr. Dummy1</h4>
+                                <p class="p" style="font-size: .8rem;">Spesialis Lorem.</p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center pt-3">
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor w-100">
+                        <div class="row py-4 px-4">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 p-relative">
+                                <img class="p-absolute blured-img-doctor" src="../img/doctors/valen.png" alt="">
+                                <div class="avatar-doctor p-relative">
+                                    <img src="../img/doctors/female.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <h4 class="h mb-0 mt-1">Dr. Dummy2</h4>
+                                <p class="p" style="font-size: .8rem;">Spesialis Ipsum</p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center pt-3">
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="buttons mt-4">
-                    <button class="btn-primary mx-2">Start Consultation</button>
-                    <button class="btn-primary mx-2">View Doctors</button>
+            </div>
+            <div class="col-lg-8 col-md-6 p-relative col-sm-12 col-xs-12 bg-primary-light">
+                <div class="header-chat w-100 bg-primary pt-3 px-3 pb-2" style="box-sizing: border-box;">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                            <div class="avatar-doctor d-inline-block p-relative">
+                                <img src="../img/doctors/aku.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-xs-7 col-md-7 text-left pt-1">
+                            <h3 class="h mb-0 text-white d-inline-block">Dr. Khusnul Khuluq</h3>
+                            <p class="p p-relative text-white mb-0" style="font-size: .8rem; top: -3px;">Spesialis Pilek | Online</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-3 col-xs-3 col-md-3 text-right pt-2">
+                            <i class="fas text-white fa-user-circle mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatting-content">
+                    <div class="rating-chat p-absolute w-100 bg-white p-4" style="top: 0; left: 0; box-sizing: border-box;">
+                        <div class="p-absolute close-rating" style="top: 10px; right: 20px;"><i class="fas fa-times"></i></div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h4 class="h">Beri Rating</h4>
+                                <p class="p" style="font-size: .8rem;">
+                                    Kami mengedepankan layanan pasien / user, Jadi beri tahu 
+                                    kami respondmu terhadap dokter kepada kami.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3 text-right pr-5">
+                                <p style="font-size: 1rem;">
+                                    <span><i class="fas fa-star star-rating" id="star1"></i></span>
+                                    <span><i class="fas fa-star star-rating" id="star2"></i></span>
+                                    <span><i class="fas fa-star star-rating" id="star3"></i></span>
+                                    <span><i class="fas fa-star star-rating" id="star4"></i></span>
+                                    <span><i class="fas fa-star star-rating" id="star5"></i></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chatmessages p-absolute">
+                        <div class="row my-2">
+                            <div class="col-lg-7 col-md-6 col-sm-5 col-xs-4"></div>
+                            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-7 p-relative text-right">
+                                <p class="pl-3 pt-2 pb-4 pr-3 bg-white rad-md p-relative text-chat">
+                                    <span class="dropdown-chat-toggle p-absolute" data-chatId="1">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </span>
+                                    Halo dokter ? Ngapain lu ?
+                                    <span class="p-absolute time-chat">2 minutes ago</span>
+                                </p>
+                                <div class="dropdownChat text-left"> 
+                                    <div class="chat-dropdown p-relative" data-chatId="1">
+                                        <div class="dropTriangle w-100 p-absolute text-center">
+                                            <div class="d-inline-block arrow-up-dropdown"></div>
+                                        </div>
+                                        <ul>
+                                            <li>Balas</li>
+                                            <li id="report">Report</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="avatar-doctor d-inline-block p-relative">
+                                    <img src="../img/doctors/male.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2 pl-2">
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="avatar-doctor d-inline-block p-relative">
+                                    <img src="../img/doctors/aku.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-7 p-relative">
+                                <p class="pl-3 pt-2 pb-4 pr-3 bg-white rad-md p-relative text-chat">
+                                    <span class="dropdown-chat-toggle p-absolute" data-chatId="2">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </span>
+                                    Anjay.. Report aja lah. biar di blacklist
+                                    <span class="p-absolute time-chat">2 minutes ago</span>
+                                </p>
+                                <div class="dropdownChat"> 
+                                    <div class="chat-dropdown p-relative" data-chatId="2">
+                                        <div class="dropTriangle w-100 p-absolute text-center">
+                                            <div class="d-inline-block arrow-up-dropdown"></div>
+                                        </div>
+                                        <ul>
+                                            <li>Balas</li>
+                                            <li id="report">Report</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 bg-white p-2" style="border-top-right-radius: 8px; border-top-left-radius: 8px;">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 pr-3">
+                                <textarea name="message" id="messageChat" class="w-100 p-3 border-0 bg-gainsboro rad" rows="1" placeholder="Tulis pesan.."></textarea>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-xs-1 col-sm-1 text-center">
+                                <button class="btn btn-white rad border-0 p-3"><i class="fas fa-upload"></i></button>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-xs-1 col-sm-1 text-center">
+                                <button class="btn btn-secondary shadow-secondary rad-md border-0 p-3 p-relative" style="top: -20px;"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center p-relative" style="z-index: 100;">
-            <img src="../img/doctors/doctors2.png" class="p-relative doctor-wal1" alt="">
-            <img src="../img/doctors/doctors1.png" class="p-relative doctor-wal2" alt="">
+
         </div>
     </div>
 
@@ -107,4 +325,77 @@
 <script src="../js/jquery-3.5.1.min.js"></script>
 <script src="../js/responsive.js"></script>
 <script src="../js/components/navbar.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.dropdown-chat-toggle').click(function() {
+            var id = $(this).attr('data-chatId');
+            $('.dropdownChat').find(".chat-dropdown[data-chatId='" + id + "']").slideToggle();
+        });
+        $('#toggleChat').click(function() {
+            $('#chatList').toggleClass('chatListActive');
+            if($('#chatList').hasClass('chatListActive')) {
+                $('#toggleChat').html('Hide Chat')
+            } else {
+                $('#toggleChat').html('Show Chat')
+            }
+        });
+        $('.close-rating').click(function() {
+            $('.rating-chat').fadeToggle();
+        });
+        $('#startChat').click(function() {
+            document.location.href = '#messageChat';
+            $('#messageChat').focus();
+        });
+        $('#star1').mouseover(function() {
+            $(this).addClass('text-warning');
+        });
+        $('#star1').mouseleave(function() {
+            $(this).removeClass('text-warning');
+        });
+        $('#star2').mouseover(function() {
+            $('#star1').addClass('text-warning');
+            $(this).addClass('text-warning');
+        });
+        $('#star2').mouseleave(function() {
+            $('#star1').removeClass('text-warning');
+            $(this).removeClass('text-warning');
+        });
+        $('#star3').mouseover(function() {
+            $('#star1').addClass('text-warning');
+            $('#star2').addClass('text-warning');
+            $(this).addClass('text-warning');
+        });
+        $('#star3').mouseleave(function() {
+            $('#star1').addClass('text-warning');
+            $('#star2').removeClass('text-warning');
+            $(this).removeClass('text-warning');
+        });
+        $('#star4').mouseover(function() {
+            $('#star1').addClass('text-warning');
+            $('#star2').addClass('text-warning');
+            $('#star3').addClass('text-warning');
+            $(this).addClass('text-warning');
+        });
+        $('#star4').mouseleave(function() {
+            $('#star1').removeClass('text-warning');
+            $('#star2').removeClass('text-warning');
+            $('#star3').removeClass('text-warning');
+            $(this).removeClass('text-warning');
+        });
+        $('#star5').mouseover(function() {
+            $('#star1').addClass('text-warning');
+            $('#star2').addClass('text-warning');
+            $('#star3').addClass('text-warning');
+            $('#star4').addClass('text-warning');
+            $(this).addClass('text-warning');
+        });
+        $('#star5').mouseleave(function() {
+            $('#star1').removeClass('text-warning');
+            $('#star2').removeClass('text-warning');
+            $('#star3').removeClass('text-warning');
+            $('#star4').removeClass('text-warning');
+            $(this).removeClass('text-warning');
+        });
+    });
+</script>
 </html>

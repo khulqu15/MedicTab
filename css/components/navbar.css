@@ -32,7 +32,20 @@ nav {
     transition: all .3s;
     bottom: 0px;
     text-align: center;
-    background-color: white;
+    background-color: #1D69D6;
+}
+.active-menu:after {
+    content: '';
+    height: 3px;
+    width: 80%;
+    position: absolute;
+    border-radius: 10px;
+    right: 10%;
+    display: inline-block;
+    transition: all .3s;
+    bottom: 0px;
+    text-align: center;
+    background-color: #1D69D6;
 }
 .menu ul li:hover::after {
     width: 80%;
@@ -78,6 +91,19 @@ nav {
         content: '';
         height: 3px;
         width: 0;
+        position: absolute;
+        border-radius: 10px;
+        right: 2%;
+        display: inline-block;
+        transition: all .3s;
+        bottom: 0px;
+        text-align: center;
+        background-color: #1D69D6;
+    }
+    .active-menu:after {
+        content: '';
+        height: 3px;
+        width: 30%;
         position: absolute;
         border-radius: 10px;
         right: 2%;
