@@ -478,3 +478,31 @@
     top: -30px;
     border: 5px solid white;
 }
+
+.card-left {
+    border-radius: 5%;
+    height : 520px;
+}
+.card-right {
+    border-radius: 5%;
+    height : 520px;
+}
+.login-form {
+    border-radius: 16px;
+    border-style: none;
+    width: 95%;
+    background-color: #F1F1F1;
+}
+.login-button {
+    width: 95%;
+    border-radius: 16px;
+}
+.w-90 {
+    width: 95%;
+}
+.login-form2 {
+    border-radius: 16px;
+    border-style: none;
+    width: 75%;
+    background-color: #F1F1F1;
+}
