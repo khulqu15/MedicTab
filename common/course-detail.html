@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Article | MedicTab</title>
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/other.css">
+</head>
+<body>
+    <nav class="navbar py-4 px-3 p-fixed t-0 w-100">
+        <div class="d-flex">
+            <div class="brand ml-4">
+                <div class="d-flex text-dark">
+                <h3 class="h brand-title">MedicTab</h3>
+            </div>
+            </div>
+            <div class="menu p-absolute text-center d-md-none r-0 pr-7" id="nav-menu">
+                <ul class="nav-ul d-flex w-100 d-md-inline-block">
+                    <li class="px-3"><a href="../index.html" class="nav-link" style="color: black !important;">Home</a></li>
+                    <li class="px-3"><a href="consultation.html" class="nav-link" style="color: black !important;">Consultation</a></li>
+                    <li class="px-3"><a href="meet.html" class="nav-link" style="color: black !important;">Meet</a></li>
+                    <li class="px-3"><a href="news.html" class="nav-link" style="color: black !important;">News</a></li>
+                    <li class="px-3"><a href="course.html" class="nav-link active-menu" style="color: black !important;">Article</a></li>
+                    <li class="px-3"><a href="#" class="nav-link" style="color: black !important;">Shop</a></li>
+                    <div class="px-3 buttons-auth">
+                        <button class="border-0 py-2 px-5 btn-primary shadow-black" id="btn-signin">SignIn</button>
+                        <button class="rad py-2 text-primary px-4 btn-transparent border-primary" id="btn-signup">SignUp</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-toggler d-none d-md-inline-block p-absolute r-0 mr-8" id="nav-toggler">
+                <i class="fas fa-bars text-black" style="color: black !important;"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="container-lg pt-8">
+        <div class="toggle-menu-course btn-primary border-0 shadow-primary d-inline-block p-fixed"><i class="fas fa-list"></i></div>
+        <div class="w-100 bg-gainsboro-light mt-3 h-100 p-fixed menu-course-detail">
+            <ul class="p-0 m-0" style="list-style: none;">
+                <li class="px-5 py-3">
+                    <i class="fas fa-th-large text-primary"></i> 
+                    <span class="ml-3 widget-name-course">List Carousels</span>
+                </li>
+                <li class="px-5 py-3">
+                    <i class="far fa-comments text-primary"></i> 
+                    <span class="ml-3 widget-name-course">Comment</span>
+                </li>
+                <li class="px-5 py-3" id="share">
+                    <i class="fas fa-share-alt text-primary"></i> 
+                    <span class="ml-3 widget-name-course">Share</span>
+                </li>
+            </ul>
+            <ul class="m-0" id="share-trigger" style="list-style: none; display: none;">
+                <li class="px-8 px-md-0 py-3" style="box-sizing: border-box;">
+                    <span class="px-3"><i class="fab fa-facebook" style="color: #4267B2;"></i> <span class="ml-3 widget-name-course">Facebook</span></span>
+                </li>
+                <li class="px-8 px-md-0 py-3" style="box-sizing: border-box;">
+                    <span class="px-3"><i class="fab fa-twitter" style="color: #1da1f2;"></i> <span class="ml-3 widget-name-course">Twitter</span></span>
+                </li>
+                <li class="px-8 px-md-0 py-3" style="box-sizing: border-box;">
+                    <span class="px-3"><i class="fab fa-pinterest" style="color: #E60023;"></i> <span class="ml-3 widget-name-course">Pinterest</span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="row pt-3 pb-5">
+            <div class="col-lg-3 col-md-3 col-sm-2 col-xs-1"></div>
+            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-10 py-6">
+                <h3 class="p text-primary bold mb-2">General</h3>
+                <div class="cover-course overflow-hidden rad-md mb-3 w-100 bg-primary" style="height: 300px; box-sizing: border-box; background-image: url('../img/course/3.png');"></div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 text-left p">
+                        <i class="far fa-calendar text-primary"></i> <span>20 Agustus 2020</span>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 text-right p">
+                        <i class="far fa-eye text-primary ml-3"></i> <span>1.34k</span>
+                        <i class="far fa-comments text-primary ml-3"></i> <span>19</span>
+                        <i class="fas fa-share-alt text-primary ml-3"></i> <span>26</span>
+                    </div>
+                </div>
+                <h1 class="h mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, repellendus!</h1>
+                <p class="p mt-2" style="font-size: 1.1rem; text-indent: 50px;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                </p>
+                <p class="p mt-2" style="font-size: 1.1rem; text-indent: 50px;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                </p>
+                <p class="p mt-2" style="font-size: 1.1rem; text-indent: 50px;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="container-lg py-5 p-relative" style="z-index: 10;">
+        <div class="text-center text-primary-light">
+            <h2 class="h">MedicTab</h2>
+            <p class="mt-4">
+                <span class="mx-3 my-2 d-inline-block d-md-block">Home</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Consultation</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Meet</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Course</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Articles</span>
+            </p>
+            <p class="mt-4">
+                <span><i class="fab fa-instagram mx-3"></i></span>
+                <span><i class="fab fa-facebook mx-3"></i></span>
+                <span><i class="fab fa-twitter mx-3"></i></span>
+            </p>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-xs-6 text-left">
+                        <p>English</p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p>Mohammad Khusnul Khuluq</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/responsive.js"></script>
+<script src="../js/components/navbar.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#share').click(function() {
+            $('#share-trigger').slideToggle();
+        });
+        $('.toggle-menu-course').click(function() {
+            $('.menu-course-detail').toggleClass('menu-course-detail-show')
+        });
+    });
+</script>
+</html>

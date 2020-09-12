@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article | MedicTab</title>
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/other.css">
+</head>
+<body>
+    <nav class="navbar py-4 px-3 p-fixed t-0 w-100">
+        <div class="d-flex">
+            <div class="brand ml-4">
+                <div class="d-flex text-white">
+                <h3 class="h brand-title">MedicTab</h3>
+            </div>
+            </div>
+            <div class="menu p-absolute text-center d-md-none r-0 pr-7 pr-md-0" id="nav-menu">
+                <ul class="nav-ul d-flex w-100 d-md-inline-block">
+                    <li class="px-3 px-md-2"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="px-3 px-md-2"><a href="consultation.html" class="nav-link">Consultation</a></li>
+                    <li class="px-3 px-md-2"><a href="meet.html" class="nav-link">Meet</a></li>
+                    <li class="px-3 px-md-2"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="px-3 px-md-2"><a href="course.html" class="nav-link active-menu">Article</a></li>
+                    <li class="px-3 px-md-2"><a href="#" class="nav-link">Shop</a></li>
+                    <div class="px-3 px-md-2 buttons-auth">
+                        <button class="border-0 py-2 px-5 btn-white shadow-black" id="btn-signin">SignIn</button>
+                        <button class="rad py-2 text-white px-4 btn-transparent border-white" id="btn-signup">SignUp</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-toggler d-none d-md-inline-block p-absolute r-0 mr-8 mr-md-4" id="nav-toggler">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-lg p-relative py-8 bg-primary">
+        <div class="jumbotron-course p-absolute">
+            <div class="linear-course"></div>
+        </div>
+        <div class="row">
+            <div class="p-relative col-lg-8 col-md-8 col-sm-12 col-xs-12 p-8 mx-4 mx-md-0 pb-0" style="z-index: 10;">
+                <h1 class="text-white mt-4">Course</h1>
+                <p class="p text-white">Search Course</p>
+                <div class="row mt-4">
+                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                        <input type="text" class="border-0 bg-white rad-md px-5 py-3 w-100" placeholder="Title Course">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <select name="" class="border-0 bg-white rad-md px-3 py-3 w-100" id="">
+                            <option value="">Category</option>
+                            <option value="">General</option>
+                            <option value="">Intermediate</option>
+                            <option value="">Advance</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-relative py-5">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <a href="course-detail.html" class="text-black" style="text-decoration: none;">
+                    <div class="w-100 main-course pr-3 pr-md-0">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 rad-md cardCourse overflow-hidden">
+                                <div class="card-main-course" style="background-image: url('../img/course/1.png');"></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-relative" style="height: 290px;">
+                                <p class="p text-primary mb-0 bold mb-2">General</p>
+                                <h3 class="h mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ad.</h3>
+                                <p style="font-size: .85rem;" class="p mb-3">
+                                    <span><i class="far fa-calendar text-primary"></i> 20 Agusutus 2020</span>
+                                </p>
+                                <p class="p" style="font-size: .85rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, repellat culpa! Ullam sint deleniti eos ut facere expedita illum sapiente, libero ex earum, saepe inventore!..</p>
+                                <div class="w-100 widget-course">
+                                    <div class="row">
+                                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 mt-md-3">
+                                            <p style="font-size: .75rem;" class="p mb-3 mt-3 mt-md-5">
+                                                <span class="mr-2"><i class="far fa-eye text-primary"></i> 1.6k</span>
+                                                <span class="mr-2"><i class="far fa-comments text-primary"></i> 143</span>
+                                                <span class="mr-2"><i class="fas fa-share-alt text-primary"></i> 68</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                            <button class="btn btn-primary shadow-primary w-100 py-3 rad-md mt-md-5">Read <i class="fas fa-caret-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <a href="course-detail.html" class="text-black" style="text-decoration: none;">
+                    <div class="w-100 pl-3 pl-md-0">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-secondary rad-md p-relative overflow-hidden">
+                                        <div class="card-submain-course" style="background-image: url('../img/course/1.2.png');"></div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="h">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-12 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-secondary rad-md p-relative overflow-hidden">
+                                        <div class="card-submain-course" style="background-image: url('../img/course/1.3.png');"></div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="h">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <a href="course-detail.html" class="text-black" style="text-decoration: none;">
+                    <div class="mx-3 card-article p-relative bg-white rad-md">
+                        <div class="card-image-article rad-md overflow-hidden p-relative" style="height: 160px;">
+                            <img src="../img/course/2.png" width="100%" style="object-fit: cover;" alt="">
+                            <div class="text-white p-absolute bg-secondary rad px-4 py-2" style="left: 0; bottom: 0;">Article</div>
+                        </div>
+                        <div class="card-body bg-white p-3 rad-md">
+                            <h3 class="h">Lorem, ipsum dolor.</h3>
+                            <p class="p mb-2" style="font-size: .85rem;">
+                                <span class="mr-3"><i class="fas fa-share-alt text-primary"></i> 230</span>
+                                <span class="mr-3"><i class="fas fa-comments text-primary"></i> 124</span>
+                                <span class="mr-3"><i class="fas fa-eye text-primary"></i> 1.6k</span>
+                            </p>
+                            <p class="p mb-5">Lorem ipsum dolor sit amet consectetur elit. Enim, repudiandae...</p>
+                            <button class="p-absolute px-5 btn btn-primary py-3 rad-md" style="right: -10px; bottom: 0px">See more <i class="fas fa-caret-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <a href="course-detail.html" class="text-black" style="text-decoration: none;">
+                <div class="mx-3 card-article p-relative bg-white rad-md">
+                    <div class="card-image-article rad-md overflow-hidden p-relative" style="height: 160px;">
+                        <img src="../img/course/3.png" width="100%" style="object-fit: cover;" alt="">
+                        <div class="text-white p-absolute bg-secondary rad px-4 py-2" style="left: 0; bottom: 0;">Article</div>
+                    </div>
+                    <div class="card-body bg-white p-3 rad-md">
+                        <h3 class="h">Lorem, ipsum dolor.</h3>
+                        <p class="p mb-2" style="font-size: .85rem;">
+                            <span class="mr-3"><i class="fas fa-share-alt text-primary"></i> 230</span>
+                            <span class="mr-3"><i class="fas fa-comments text-primary"></i> 124</span>
+                            <span class="mr-3"><i class="fas fa-eye text-primary"></i> 1.6k</span>
+                        </p>
+                        <p class="p mb-5">Lorem ipsum dolor sit amet consectetur elit. Enim, repudiandae...</p>
+                        <button class="p-absolute px-5 btn btn-primary py-3 rad-md" style="right: -10px; bottom: 0px">See more <i class="fas fa-caret-right"></i></button>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <a href="course-detail.html" class="text-black" style="text-decoration: none;">
+                <div class="mx-3 card-article p-relative bg-white rad-md">
+                    <div class="card-image-article rad-md overflow-hidden p-relative" style="height: 160px;">
+                        <img src="../img/course/4.png" width="100%" style="object-fit: cover;" alt="">
+                        <div class="text-white p-absolute bg-secondary rad px-4 py-2" style="left: 0; bottom: 0;">Article</div>
+                    </div>
+                    <div class="card-body bg-white p-3 rad-md">
+                        <h3 class="h">Lorem, ipsum dolor.</h3>
+                        <p class="p mb-2" style="font-size: .85rem;">
+                            <span class="mr-3"><i class="fas fa-share-alt text-primary"></i> 230</span>
+                            <span class="mr-3"><i class="fas fa-comments text-primary"></i> 124</span>
+                            <span class="mr-3"><i class="fas fa-eye text-primary"></i> 1.6k</span>
+                        </p>
+                        <p class="p mb-5">Lorem ipsum dolor sit amet consectetur elit. Enim, repudiandae...</p>
+                        <button class="p-absolute px-5 btn btn-primary py-3 rad-md" style="right: -10px; bottom: 0px">See more <i class="fas fa-caret-right"></i></button>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <a href="course-detail.html" class="text-black" style="text-decoration: none;">
+                <div class="mx-3 card-article p-relative bg-white rad-md">
+                    <div class="card-image-article rad-md overflow-hidden p-relative" style="height: 160px;">
+                        <img src="../img/course/5.png" width="100%" style="object-fit: cover;" alt="">
+                        <div class="text-white p-absolute bg-secondary rad px-4 py-2" style="left: 0; bottom: 0;">Article</div>
+                    </div>
+                    <div class="card-body bg-white p-3 rad-md">
+                        <h3 class="h">Lorem, ipsum dolor.</h3>
+                        <p class="p mb-2" style="font-size: .85rem;">
+                            <span class="mr-3"><i class="fas fa-share-alt text-primary"></i> 230</span>
+                            <span class="mr-3"><i class="fas fa-comments text-primary"></i> 124</span>
+                            <span class="mr-3"><i class="fas fa-eye text-primary"></i> 1.6k</span>
+                        </p>
+                        <p class="p mb-5">Lorem ipsum dolor sit amet consectetur elit. Enim, repudiandae...</p>
+                        <button class="p-absolute px-5 btn btn-primary py-3 rad-md" style="right: -10px; bottom: 0px">See more <i class="fas fa-caret-right"></i></button>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <a href="course-detail.html" class="text-black" style="text-decoration: none;">
+                <div class="mx-3 card-article p-relative bg-white rad-md">
+                    <div class="card-image-article rad-md overflow-hidden p-relative" style="height: 160px;">
+                        <img src="../img/course/6.png" width="100%" style="object-fit: cover;" alt="">
+                        <div class="text-white p-absolute bg-secondary rad px-4 py-2" style="left: 0; bottom: 0;">Article</div>
+                    </div>
+                    <div class="card-body bg-white p-3 rad-md">
+                        <h3 class="h">Lorem, ipsum dolor.</h3>
+                        <p class="p mb-2" style="font-size: .85rem;">
+                            <span class="mr-3"><i class="fas fa-share-alt text-primary"></i> 230</span>
+                            <span class="mr-3"><i class="fas fa-comments text-primary"></i> 124</span>
+                            <span class="mr-3"><i class="fas fa-eye text-primary"></i> 1.6k</span>
+                        </p>
+                        <p class="p mb-5">Lorem ipsum dolor sit amet consectetur elit. Enim, repudiandae...</p>
+                        <button class="p-absolute px-5 btn btn-primary py-3 rad-md" style="right: -10px; bottom: 0px">See more <i class="fas fa-caret-right"></i></button>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <a href="course-detail.html" class="text-black" style="text-decoration: none;">
+                <div class="mx-3 card-article p-relative bg-white rad-md">
+                    <div class="card-image-article rad-md overflow-hidden p-relative" style="height: 160px;">
+                        <img src="../img/course/7.png" width="100%" style="object-fit: cover;" alt="">
+                        <div class="text-white p-absolute bg-secondary rad px-4 py-2" style="left: 0; bottom: 0;">Article</div>
+                    </div>
+                    <div class="card-body bg-white p-3 rad-md">
+                        <h3 class="h">Lorem, ipsum dolor.</h3>
+                        <p class="p mb-2" style="font-size: .85rem;">
+                            <span class="mr-3"><i class="fas fa-share-alt text-primary"></i> 230</span>
+                            <span class="mr-3"><i class="fas fa-comments text-primary"></i> 124</span>
+                            <span class="mr-3"><i class="fas fa-eye text-primary"></i> 1.6k</span>
+                        </p>
+                        <p class="p mb-5">Lorem ipsum dolor sit amet consectetur elit. Enim, repudiandae...</p>
+                        <button class="p-absolute px-5 btn btn-primary py-3 rad-md" style="right: -10px; bottom: 0px">See more <i class="fas fa-caret-right"></i></button>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right my-3">
+                <button class="btn btn-white border-0 rad-sm p-3 py-2"><i class="fas fa-caret-left"></i></button>
+                <button class="btn btn-primary shadow-primary border-0 rad-sm p-3 py-2">1</button>
+                <button class="btn btn-primary-light border-0 rad-sm p-3 py-2">2</button>
+                <button class="btn btn-white border-0 rad-sm p-3 py-2"><i class="fas fa-caret-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-lg py-5">
+        <div class="text-center text-primary-light">
+            <h2 class="h">MedicTab</h2>
+            <p class="mt-4">
+                <span class="mx-3 my-2 d-inline-block d-md-block">Home</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Consultation</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Meet</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Course</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Articles</span>
+            </p>
+            <p class="mt-4">
+                <span><i class="fab fa-instagram mx-3"></i></span>
+                <span><i class="fab fa-facebook mx-3"></i></span>
+                <span><i class="fab fa-twitter mx-3"></i></span>
+            </p>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-xs-6 text-left">
+                        <p>English</p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p>Mohammad Khusnul Khuluq</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/responsive.js"></script>
+<script src="../js/components/navbar.js"></script>
+</html>

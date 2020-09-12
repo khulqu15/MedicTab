@@ -29,8 +29,9 @@
                     <li class="px-3"><a href="index.html" class="nav-link active-menu">Home</a></li>
                     <li class="px-3"><a href="common/consultation.html" class="nav-link">Consultation</a></li>
                     <li class="px-3"><a href="common/meet.html" class="nav-link">Meet</a></li>
-                    <li class="px-3"><a href="#" class="nav-link">Course</a></li>
-                    <li class="px-3"><a href="#" class="nav-link">Articles</a></li>
+                    <li class="px-3"><a href="common/news.html" class="nav-link">News</a></li>
+                    <li class="px-3"><a href="common/course.html" class="nav-link">Article</a></li>
+                    <li class="px-3"><a href="#" class="nav-link">Shop</a></li>
                     <div class="px-3 buttons-auth">
                         <button class="border-0 py-2 px-5 btn-white shadow-black" id="btn-signin">SignIn</button>
                         <button class="rad py-2 text-white px-4 btn-transparent border-white" id="btn-signup">SignUp</button>
@@ -46,7 +47,7 @@
     <div class="container-lg bg-primary p-relative py-8" id="jumbotron-welcome" style="background-image: url('img/home/welcome.png');">
         <div class="overlay-primary"></div>
         <div class="row py-8 px-5 my-8">
-            <div class="col-md-6 p-relative col-sm-12 col-xs-12 py-8 px-8">
+            <div class="col-lg-6 col-md-6 p-relative col-sm-12 col-xs-12 py-8 px-8 px-md-2 py-md-2">
                 <h1 class="h text-white mb-0" style="font-size: 2.5rem;">Leading The Way In <br> Medical Excellence</h1>
                 <p class="text-white mb-0">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure labore quis repellat modi dolorum distinctio impedit recusandae mollitia. Cum quae provident a maiores corrupti reiciendis.
@@ -91,8 +92,8 @@
     </div>
 
     <div class="container-lg p-relative overflow-hidden">
-        <div class="rect-decor" style="bottom: 0px; opacity: .5;"></div>
-        <div class="rect-decor" style="opacity: .5;"></div>
+        <div class="rect-decor" style="bottom: 0px; opacity: .3;"></div>
+        <div class="rect-decor" style="opacity: .3;"></div>
         <img src="img/illust/vector.png" class="p-absolute w-75" style="bottom: 0px;" alt="">
         <div class="container p-relative py-8">
             <div class="text-center p-relative" style="z-index: 100;">
@@ -105,14 +106,17 @@
                     </div>
                 </div>
                 <div class="buttons mt-4">
-                    <button class="btn-primary mx-2">Start Consultation</button>
+                    <button class="btn-primary mx-2 my-2">Start Consultation</button>
                     <button class="btn-transparent border-primary mx-2 py-2 px-4" onclick="location.href = 'common/list-doctor.html'">View Doctors</button>
                 </div>
             </div>
         </div>
-        <div class="text-center p-relative" style="z-index: 100;">
+        <div class="text-center p-relative d-md-none d-inline-block" style="z-index: 100;">
             <img src="img/doctors/doctors2.png" class="p-relative doctor-wal1" alt="">
             <img src="img/doctors/doctors1.png" class="p-relative doctor-wal2" alt="">
+        </div>
+        <div class="text-center p-relative d-none d-md-inline-block" style="z-index: 100;">
+            <img src="img/doctors/doctors2.png" class="p-relative doctor-wal1 w-100" style="left: 0;" alt="">
         </div>
     </div>
 
@@ -121,7 +125,7 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8 col-sm-12 col-md-12 col-xs-12">
-                    <div class="text-center px-5">
+                    <div class="text-center px-5 px-md-1">
                         <h1 class="h">Everything you need for your healths is here</h1>
                         <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ratione animi accusantium eos a harum exercitationem explicabo corporis doloribus maiores numquam nam, fugiat maxime optio?</p>
                         <div class="d-inline-block text-center mt-4">
@@ -133,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5 px-8 px-md-5">
+            <div class="row mt-5 px-8 px-md-0">
                 <div class="col-lg-4 px-2 col-md-6 col-sm-12 col-xs-12">
                     <div class="card-shop p-relative bg-white overflow-hidden">
                         <div class="card-image-top w-100 p-relative overflow-hidden">
@@ -141,14 +145,14 @@
                         </div>
                         <div class="card-body overflow-hidden w-100 p-absolute bg-white">
                             <div class="row">
-                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-9">
+                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-12">
                                     <div class="m-3 p-relative">
                                         <h4 class="h">Drugs Covid 19</h4>
                                         <button class="btn mt-1 btn-secondary border-0 px-3 py-1">Doctor Recipe</button>
                                         <p class="p card-shop-p pt-2" style="font-size: .85rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, Lorem, ipsum dolor.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative d-md-none">
                                     <div class="buttons-shop w-100">
                                         <button class="btn-cart-shop border-0 py-3 w-100"><i class="fas fa-cart-plus"></i></button>
                                         <button class="btn-price-shop border-0 pb-3 pt-4 w-100 p-relative bold"><span class="d-inline-block p-relative" style="top: 3px;">$12</span></button>
@@ -166,14 +170,14 @@
                         </div>
                         <div class="card-body overflow-hidden w-100 p-absolute bg-white">
                             <div class="row">
-                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-9">
+                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-12">
                                     <div class="m-3 p-relative">
                                         <h4 class="h">Drugs Covid 19</h4>
                                         <button class="btn mt-1 btn-secondary border-0 px-3 py-1">Doctor Recipe</button>
                                         <p class="p card-shop-p pt-2" style="font-size: .85rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, Lorem, ipsum dolor.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative d-md-none">
                                     <div class="buttons-shop w-100">
                                         <button class="btn-cart-shop border-0 py-3 w-100"><i class="fas fa-cart-plus"></i></button>
                                         <button class="btn-price-shop border-0 pb-3 pt-4 w-100 p-relative bold"><span class="d-inline-block p-relative" style="top: 3px;">$13.3</span></button>
@@ -191,14 +195,14 @@
                         </div>
                         <div class="card-body overflow-hidden w-100 p-absolute bg-white">
                             <div class="row">
-                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-9">
+                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-12">
                                     <div class="m-3 p-relative">
                                         <h4 class="h">Drugs Covid 19</h4>
                                         <button class="btn mt-1 btn-secondary border-0 px-3 py-1">Doctor Recipe</button>
                                         <p class="p card-shop-p pt-2" style="font-size: .85rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, Lorem, ipsum dolor.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative d-md-none">
                                     <div class="buttons-shop w-100">
                                         <button class="btn-cart-shop border-0 py-3 w-100"><i class="fas fa-cart-plus"></i></button>
                                         <button class="btn-price-shop border-0 pb-3 pt-4 w-100 p-relative bold"><span class="d-inline-block p-relative" style="top: 3px;">$14.5</span></button>
@@ -216,14 +220,14 @@
                         </div>
                         <div class="card-body overflow-hidden w-100 p-absolute bg-white">
                             <div class="row">
-                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-9">
+                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-12">
                                     <div class="m-3 p-relative">
                                         <h4 class="h">Drugs Covid 19</h4>
                                         <button class="btn mt-1 btn-secondary border-0 px-3 py-1">Doctor Recipe</button>
                                         <p class="p card-shop-p pt-2" style="font-size: .85rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, Lorem, ipsum dolor.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative d-md-none">
                                     <div class="buttons-shop w-100">
                                         <button class="btn-cart-shop border-0 py-3 w-100"><i class="fas fa-cart-plus"></i></button>
                                         <button class="btn-price-shop border-0 pb-3 pt-4 w-100 p-relative bold"><span class="d-inline-block p-relative" style="top: 3px;">$22.2</span></button>
@@ -241,14 +245,14 @@
                         </div>
                         <div class="card-body overflow-hidden w-100 p-absolute bg-white">
                             <div class="row">
-                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-9">
+                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-12">
                                     <div class="m-3 p-relative">
                                         <h4 class="h">Drugs Covid 19</h4>
                                         <button class="btn mt-1 btn-secondary border-0 px-3 py-1">Doctor Recipe</button>
                                         <p class="p card-shop-p pt-2" style="font-size: .85rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, Lorem, ipsum dolor.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative d-md-none">
                                     <div class="buttons-shop w-100">
                                         <button class="btn-cart-shop border-0 py-3 w-100"><i class="fas fa-cart-plus"></i></button>
                                         <button class="btn-price-shop border-0 pb-3 pt-4 w-100 p-relative bold"><span class="d-inline-block p-relative" style="top: 3px;">$6.3</span></button>
@@ -266,14 +270,14 @@
                         </div>
                         <div class="card-body overflow-hidden w-100 p-absolute bg-white">
                             <div class="row">
-                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-9">
+                                <div class="col-lg-9 p-relative col-md-9 col-sm-9 col-xs-12">
                                     <div class="m-3 p-relative">
                                         <h4 class="h">Drugs Covid 19</h4>
                                         <button class="btn mt-1 btn-secondary border-0 px-3 py-1">Doctor Recipe</button>
                                         <p class="p card-shop-p pt-2" style="font-size: .85rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, Lorem, ipsum dolor.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 p-relative d-md-none">
                                     <div class="buttons-shop w-100">
                                         <button class="btn-cart-shop border-0 py-3 w-100"><i class="fas fa-cart-plus"></i></button>
                                         <button class="btn-price-shop border-0 pb-3 pt-4 w-100 p-relative bold"><span class="d-inline-block p-relative" style="top: 3px;">$5.0</span></button>
@@ -291,15 +295,15 @@
         </div>
     </div>
 
-    <div class="container-lg bg-primary p-relative pt-8 pb-1" id="jumbotron-welcome" style="background-image: url('img/consultation/consultation.png');">
+    <div class="container-lg bg-primary p-relative pt-8 pb-1 pt-md-2" id="jumbotron-welcome" style="background-image: url('img/consultation/consultation.png');">
         <div class="overlay-gradient"></div>
         <div class="container">
-            <div class="row py-8 mt-8 mb-5">
-                <div class="col-md-6 text-white p-relative text-left col-sm-12 col-xs-12 py-8 px-5">
+            <div class="row py-8 mt-8 mt-md-4 mb-5">
+                <div class="col-md-6 text-white p-relative text-left col-sm-12 col-xs-12 py-8 py-md-4 px-5 px-md-2">
                     <h1 class="h">Meet With Pro Doctor</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus eligendi asperiores beatae, sapiente sequi hic dolores veritatis vero placeat aut consectetur voluptates neque sunt!</p>
                 </div>
-                <div class="col-md-6 text-white p-relative text-left col-sm-12 col-xs-12 py-8 px-8">
+                <div class="col-md-6 text-white p-relative text-left col-sm-12 col-xs-12 py-8 px-8 px-md-1">
                     <div class="w-100 text-black bg-white shadow-black py-5 rad p-relative">
                         <div class="title p-absolute bg-primary text-white px-5 py-3 rad shadow-primary" style="top: -20px; left: -30px;">
                             <h2>Meet Now</h2>
@@ -347,7 +351,7 @@
             <div class="col-lg-9 col-md-10 col-sm-12 col-xs-12 p-relative gradien-dark px-5 overflow-hidden live-banner">
                 <div class="rect-left-solid"></div>
                 <div class="rect-right-border"></div>
-                <img src="img/home/V.png" class="v-img" alt="">
+                <img src="img/home/V.png" class="v-img d-inline-block" alt="">
                 <img src="img/home/R.png" class="r-img" alt="">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 py-5 col-sm-6 col-xs-12 py-8 pb-md-2">
@@ -377,7 +381,7 @@
 
     <div class="container-lg bg-gainsboro-light p-relative py-5" style="z-index: 10;">
         <div class="container">
-            <div class="row px-8 px-md-5">
+            <div class="row px-8 px-md-0">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2">
                     <div class="w-100 card-course bg-white">
                         <div class="row p-3">
@@ -430,9 +434,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row px-8 px-md-5">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2 d-inline-block d-md-none">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-2 d-inline-block d-md-none">
                     <div class="w-100 card-course bg-white">
                         <div class="row p-3">
                             <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
@@ -445,7 +447,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2 d-inline-block d-md-none">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-2 d-inline-block d-md-none">
                     <div class="w-100 card-course bg-white">
                         <div class="row p-3">
                             <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
@@ -458,7 +460,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2 d-inline-block d-md-none">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-2 d-inline-block d-md-none">
                     <div class="w-100 card-course bg-white">
                         <div class="row p-3">
                             <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
@@ -471,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2 d-inline-block d-md-none">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-2 d-inline-block d-md-none">
                     <div class="w-100 card-course bg-white">
                         <div class="row p-3">
                             <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">

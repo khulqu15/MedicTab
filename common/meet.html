@@ -26,8 +26,9 @@
                     <li class="px-3"><a href="../index.html" class="nav-link">Home</a></li>
                     <li class="px-3"><a href="consultation.html" class="nav-link">Consultation</a></li>
                     <li class="px-3"><a href="meet.html" class="nav-link">Meet</a></li>
-                    <li class="px-3"><a href="#" class="nav-link">Course</a></li>
-                    <li class="px-3"><a href="#" class="nav-link">Articles</a></li>
+                    <li class="px-3"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="px-3"><a href="course.html" class="nav-link">Article</a></li>
+                    <li class="px-3"><a href="#" class="nav-link">Shop</a></li>
                     <div class="px-3 buttons-auth">
                         <button class="border-0 py-2 px-5 btn-white shadow-black" id="btn-signin">SignIn</button>
                         <button class="rad py-2 text-white px-4 btn-transparent border-white" id="btn-signup">SignUp</button>
@@ -40,45 +41,455 @@
         </div>
     </nav>
 
-    <div class="container-lg bg-primary p-relative py-8" id="jumbotron-welcome" style="background-image: url('../img/consultation/consultation.png');">
-        <div class="overlay-primary"></div>
-        <div class="row py-8 px-md-8 px-sm-3 my-8">
-            <div class="col-md-6 text-white p-relative text-left col-sm-12 col-xs-12 py-8 px-8">
-                <h1 class="h">Meet With Pro Doctor</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus eligendi asperiores beatae, sapiente sequi hic dolores veritatis vero placeat aut consectetur voluptates neque sunt!</p>
-            </div>
-            <div class="col-md-6 text-white p-relative text-left col-sm-12 col-xs-12 py-8 px-8">
-                <div class="w-100 text-black bg-white shadow-black py-5 rad p-relative">
-                    <div class="title p-absolute bg-primary text-white px-5 py-3 rad shadow-primary" style="top: -20px; left: -30px;">
-                        <h2>Meet Now</h2>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <div class="w-100 bg-primary px-8 px-md-6 pt-8 pb-4 p-relative" style="width: 102%; box-sizing: border-box;">
+                    <div class="box-right-primary"></div>
+                    <div class="row pt-8">
+                        <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12">
+                            <label for="key" class="p text-white ml-2">Cari dokter</label>
+                            <input type="text" id="key" name="key" class="w-100 p-3 my-2 rad-pill bg-primary-dark border-0 text-white" placeholder="Cari dokter">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <label for="date" class="p text-white ml-2">Tanggal meeting</label>
+                            <input type="date" id="date" name="date" class="w-100 p-3 my-2 rad-pill bg-primary-dark border-0 text-white" placeholder="Cari dokter">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <label for="time" class="p text-white ml-2">Jam meeting</label>
+                            <input type="time" id="time" name="time" class="w-100 p-3 my-2 rad-pill bg-primary-dark border-0 text-white" placeholder="Cari dokter">
+                        </div>
                     </div>
-                    <div class="pt-5 pb-3 px-3">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <label for="date">Date</label>
-                                <input type="date" class="p-2 rad border-0 border-gainsboro w-100" name="date" id="date">
+                    <div class="row mb-2 mt-2">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            <button class="btn-white border-0 px-8 py-2 rad-pill mr-2 my-2 shadow-black">Urutan Aktif</button>
+                            <button class="btn-transparent border-white px-8 py-2 rad-pill mr-2 my-2 text-white">Urutan Terbaru</button>
+                            <button class="btn-transparent border-white px-8 py-2 rad-pill mr-2 my-2 text-white">Urutan Terlama</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 p-relative bg-gainsboro-light pr-8 pr-md-0">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 p-relative px-8 px-md-2">
+                            <div class="blue-box-rad-lg bg-primary" style="width: 110%;"></div>
+                            <div class="p-relative">
+                                <h2 class="h text-white mb-3 mt-3">Today</h2>
+                                <div class="w-100 card-meet overflow-hidden w-100 rad-md my-3 p-relative bg-white">
+                                    <div class="w-100 px-2 py-2" style="box-sizing: border-box;">
+                                        <div class="row">
+                                            <div class="pt-4 col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                                <div class="image-profile-doctor-meet d-inline-block p-relative p-0" style="top: -5px;">
+                                                    <img src="../img/doctors/aku.png" class="h-100" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-3 col-xs-8 text-center">
+                                                <h4 class="h mb-0">Dr. Khusnul .K</h4>
+                                                <p class="p" style="font-size: .8rem;">Spesialis Pilek</p>
+                                            </div>
+                                            <div class="pt-4 col-lg-3 col-sm-3 text-center col-xs-6 col-md-3">
+                                                <h3 class="h mb-0">17:23 WIB</h3>
+                                                <p class="p" style="font-size: .8rem;">30 Minutes</p>
+                                            </div>
+                                            <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-4 col-xs-6 text-center">
+                                                <p class="p" style="font-size: .8rem;">Start On</p>
+                                                <h4 class="h mb-0">12 Agustus 2020</h4>
+                                            </div>
+                                            <div class="pt-3 col-lg-1 col-md-1 col-sm-12 col-xs-12 text-center p-relative">
+                                                <button class="btn-add-meet1 w-100 h-100 rad-md btn-primary border-0 p-absolute p-0 button-calendar-add" style="top: 0; right: 0; box-sizing: border-box;"><i class="fas fa-calendar-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="display-more-meet w-100 px-2 pt-2" style="box-sizing: border-box;">
+                                        <div class="row">
+                                            <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6" style="border-right: 1px solid gainsboro;">
+                                                <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                <p>9am - 12pm</p>
+                                            </div>
+                                            <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                <p>9am - 12pm</p>
+                                            </div>
+                                            <div class="text-right col-lg-4 col-md-4 col-sm-4 col-xs-12 p-relative pt-md-3">
+                                                <div class="p-absolute pb-2" style="bottom: 0; right: 0px;">
+                                                    <button class="btn btn-primary-light px-3 rad-md show-user d-xl-inline-block d-none"><i class="far fa-user"></i></button>
+                                                    <button class="btn btn-primary-light px-3 rad-md"><i class="far fa-comment"></i></button>
+                                                    <button class="btn btn-primary px-5 rad-md"><i class="fas fa-calendar-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <label for="time">Time</label>
-                                <input type="time" class="p-2 rad border-0 border-gainsboro w-100" name="time" id="time">
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <label for="time">Topik Permasalahan</label>
-                                <select class="p-2 rad border-0 border-gainsboro w-100" name="time" id="time">
-                                    <option value="">Pilih Topik Permasalahan</option>
-                                </select>
+                            <div class="w-100 mt-4">
+                                <h2 class="h">Coming Soon</h2>
+                                <div class="meets-list">
+                                    <div class="w-100 card-meet overflow-hidden w-100 rad-md my-3 p-relative bg-white">
+                                        <div class="w-100 px-2 py-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="pt-4 col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                                    <div class="image-profile-doctor-meet d-inline-block p-relative p-0" style="top: -5px;">
+                                                        <img src="../img/doctors/aku.png" class="h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-3 col-xs-8 text-center">
+                                                    <h4 class="h mb-0">Dr. Khusnul .K</h4>
+                                                    <p class="p" style="font-size: .8rem;">Spesialis Pilek</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-sm-3 text-center col-xs-6 col-md-3">
+                                                    <h3 class="h mb-0">17:23 WIB</h3>
+                                                    <p class="p" style="font-size: .8rem;">30 Minutes</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-4 col-xs-6 text-center">
+                                                    <p class="p" style="font-size: .8rem;">Start On</p>
+                                                    <h4 class="h mb-0">12 Agustus 2020</h4>
+                                                </div>
+                                                <div class="pt-3 col-lg-1 col-md-1 col-sm-12 col-xs-12 text-center p-relative">
+                                                    <button class="btn-add-meet1 w-100 h-100 rad-md btn-primary border-0 p-absolute p-0 button-calendar-add" style="top: 0; right: 0; box-sizing: border-box;"><i class="fas fa-calendar-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="display-more-meet w-100 px-2 pt-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6" style="border-right: 1px solid gainsboro;">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-right col-lg-4 col-md-4 col-sm-4 col-xs-12 p-relative pt-md-3">
+                                                    <div class="p-absolute pb-2" style="bottom: 0; right: 0px;">
+                                                    <button class="btn btn-primary-light px-3 rad-md show-user d-xl-inline-block d-none"><i class="far fa-user"></i></button>
+                                                    <button class="btn btn-primary-light px-3 rad-md"><i class="far fa-comment"></i></button>
+                                                        <button class="btn btn-primary px-5 rad-md"><i class="fas fa-calendar-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 card-meet overflow-hidden w-100 rad-md my-3 p-relative bg-white">
+                                        <div class="w-100 px-2 py-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="pt-4 col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                                    <div class="image-profile-doctor-meet d-inline-block p-relative p-0" style="top: -5px;">
+                                                        <img src="../img/doctors/aku.png" class="h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-3 col-xs-8 text-center">
+                                                    <h4 class="h mb-0">Dr. Khusnul .K</h4>
+                                                    <p class="p" style="font-size: .8rem;">Spesialis Pilek</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-sm-3 text-center col-xs-6 col-md-3">
+                                                    <h3 class="h mb-0">17:23 WIB</h3>
+                                                    <p class="p" style="font-size: .8rem;">30 Minutes</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-4 col-xs-6 text-center">
+                                                    <p class="p" style="font-size: .8rem;">Start On</p>
+                                                    <h4 class="h mb-0">12 Agustus 2020</h4>
+                                                </div>
+                                                <div class="pt-3 col-lg-1 col-md-1 col-sm-12 col-xs-12 text-center p-relative">
+                                                    <button class="btn-add-meet1 w-100 h-100 rad-md btn-primary border-0 p-absolute p-0 button-calendar-add" style="top: 0; right: 0; box-sizing: border-box;"><i class="fas fa-calendar-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="display-more-meet w-100 px-2 pt-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6" style="border-right: 1px solid gainsboro;">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-right col-lg-4 col-md-4 col-sm-4 col-xs-12 p-relative pt-md-3">
+                                                    <div class="p-absolute pb-2" style="bottom: 0; right: 0px;">
+                                                    <button class="btn btn-primary-light px-3 rad-md show-user d-xl-inline-block d-none"><i class="far fa-user"></i></button>
+                                                    <button class="btn btn-primary-light px-3 rad-md"><i class="far fa-comment"></i></button>
+                                                        <button class="btn btn-primary px-5 rad-md"><i class="fas fa-calendar-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 card-meet overflow-hidden w-100 rad-md my-3 p-relative bg-white">
+                                        <div class="w-100 px-2 py-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="pt-4 col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                                    <div class="image-profile-doctor-meet d-inline-block p-relative p-0" style="top: -5px;">
+                                                        <img src="../img/doctors/aku.png" class="h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-3 col-xs-8 text-center">
+                                                    <h4 class="h mb-0">Dr. Khusnul .K</h4>
+                                                    <p class="p" style="font-size: .8rem;">Spesialis Pilek</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-sm-3 text-center col-xs-6 col-md-3">
+                                                    <h3 class="h mb-0">17:23 WIB</h3>
+                                                    <p class="p" style="font-size: .8rem;">30 Minutes</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-4 col-xs-6 text-center">
+                                                    <p class="p" style="font-size: .8rem;">Start On</p>
+                                                    <h4 class="h mb-0">12 Agustus 2020</h4>
+                                                </div>
+                                                <div class="pt-3 col-lg-1 col-md-1 col-sm-12 col-xs-12 text-center p-relative">
+                                                    <button class="btn-add-meet1 w-100 h-100 rad-md btn-primary border-0 p-absolute p-0 button-calendar-add" style="top: 0; right: 0; box-sizing: border-box;"><i class="fas fa-calendar-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="display-more-meet w-100 px-2 pt-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6" style="border-right: 1px solid gainsboro;">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-right col-lg-4 col-md-4 col-sm-4 col-xs-12 p-relative pt-md-3">
+                                                    <div class="p-absolute pb-2" style="bottom: 0; right: 0px;">
+                                                    <button class="btn btn-primary-light px-3 rad-md show-user d-xl-inline-block d-none"><i class="far fa-user"></i></button>
+                                                    <button class="btn btn-primary-light px-3 rad-md"><i class="far fa-comment"></i></button>
+                                                        <button class="btn btn-primary px-5 rad-md"><i class="fas fa-calendar-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 card-meet overflow-hidden w-100 rad-md my-3 p-relative bg-white">
+                                        <div class="w-100 px-2 py-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="pt-4 col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                                    <div class="image-profile-doctor-meet d-inline-block p-relative p-0" style="top: -5px;">
+                                                        <img src="../img/doctors/aku.png" class="h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-3 col-xs-8 text-center">
+                                                    <h4 class="h mb-0">Dr. Khusnul .K</h4>
+                                                    <p class="p" style="font-size: .8rem;">Spesialis Pilek</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-sm-3 text-center col-xs-6 col-md-3">
+                                                    <h3 class="h mb-0">17:23 WIB</h3>
+                                                    <p class="p" style="font-size: .8rem;">30 Minutes</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-4 col-xs-6 text-center">
+                                                    <p class="p" style="font-size: .8rem;">Start On</p>
+                                                    <h4 class="h mb-0">12 Agustus 2020</h4>
+                                                </div>
+                                                <div class="pt-3 col-lg-1 col-md-1 col-sm-12 col-xs-12 text-center p-relative">
+                                                    <button class="btn-add-meet1 w-100 h-100 rad-md btn-primary border-0 p-absolute p-0 button-calendar-add" style="top: 0; right: 0; box-sizing: border-box;"><i class="fas fa-calendar-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="display-more-meet w-100 px-2 pt-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6" style="border-right: 1px solid gainsboro;">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-right col-lg-4 col-md-4 col-sm-4 col-xs-12 p-relative pt-md-3">
+                                                    <div class="p-absolute pb-2" style="bottom: 0; right: 0px;">
+                                                    <button class="btn btn-primary-light px-3 rad-md show-user d-xl-inline-block d-none"><i class="far fa-user"></i></button>
+                                                    <button class="btn btn-primary-light px-3 rad-md"><i class="far fa-comment"></i></button>
+                                                        <button class="btn btn-primary px-5 rad-md"><i class="fas fa-calendar-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 card-meet overflow-hidden w-100 rad-md my-3 p-relative bg-white">
+                                        <div class="w-100 px-2 py-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="pt-4 col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                                    <div class="image-profile-doctor-meet d-inline-block p-relative p-0" style="top: -5px;">
+                                                        <img src="../img/doctors/aku.png" class="h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-3 col-xs-8 text-center">
+                                                    <h4 class="h mb-0">Dr. Khusnul .K</h4>
+                                                    <p class="p" style="font-size: .8rem;">Spesialis Pilek</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-sm-3 text-center col-xs-6 col-md-3">
+                                                    <h3 class="h mb-0">17:23 WIB</h3>
+                                                    <p class="p" style="font-size: .8rem;">30 Minutes</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-4 col-xs-6 text-center">
+                                                    <p class="p" style="font-size: .8rem;">Start On</p>
+                                                    <h4 class="h mb-0">12 Agustus 2020</h4>
+                                                </div>
+                                                <div class="pt-3 col-lg-1 col-md-1 col-sm-12 col-xs-12 text-center p-relative">
+                                                    <button class="btn-add-meet1 w-100 h-100 rad-md btn-primary border-0 p-absolute p-0 button-calendar-add" style="top: 0; right: 0; box-sizing: border-box;"><i class="fas fa-calendar-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="display-more-meet w-100 px-2 pt-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6" style="border-right: 1px solid gainsboro;">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-right col-lg-4 col-md-4 col-sm-4 col-xs-12 p-relative pt-md-3">
+                                                    <div class="p-absolute pb-2" style="bottom: 0; right: 0px;">
+                                                    <button class="btn btn-primary-light px-3 rad-md show-user d-xl-inline-block d-none"><i class="far fa-user"></i></button>
+                                                    <button class="btn btn-primary-light px-3 rad-md"><i class="far fa-comment"></i></button>
+                                                        <button class="btn btn-primary px-5 rad-md"><i class="fas fa-calendar-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 card-meet overflow-hidden w-100 rad-md my-3 p-relative bg-white">
+                                        <div class="w-100 px-2 py-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="pt-4 col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                                    <div class="image-profile-doctor-meet d-inline-block p-relative p-0" style="top: -5px;">
+                                                        <img src="../img/doctors/aku.png" class="h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-3 col-xs-8 text-center">
+                                                    <h4 class="h mb-0">Dr. Khusnul .K</h4>
+                                                    <p class="p" style="font-size: .8rem;">Spesialis Pilek</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-sm-3 text-center col-xs-6 col-md-3">
+                                                    <h3 class="h mb-0">17:23 WIB</h3>
+                                                    <p class="p" style="font-size: .8rem;">30 Minutes</p>
+                                                </div>
+                                                <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-4 col-xs-6 text-center">
+                                                    <p class="p" style="font-size: .8rem;">Start On</p>
+                                                    <h4 class="h mb-0">12 Agustus 2020</h4>
+                                                </div>
+                                                <div class="pt-3 col-lg-1 col-md-1 col-sm-12 col-xs-12 text-center p-relative">
+                                                    <button class="btn-add-meet1 w-100 h-100 rad-md btn-primary border-0 p-absolute p-0 button-calendar-add" style="top: 0; right: 0; box-sizing: border-box;"><i class="fas fa-calendar-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="display-more-meet w-100 px-2 pt-2" style="box-sizing: border-box;">
+                                            <div class="row">
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6" style="border-right: 1px solid gainsboro;">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                    <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                                    <p>9am - 12pm</p>
+                                                </div>
+                                                <div class="text-right col-lg-4 col-md-4 col-sm-4 col-xs-12 p-relative pt-md-3">
+                                                    <div class="p-absolute pb-2" style="bottom: 0; right: 0px;">
+                                                    <button class="btn btn-primary-light px-3 rad-md show-user d-xl-inline-block d-none"><i class="far fa-user"></i></button>
+                                                    <button class="btn btn-primary-light px-3 rad-md"><i class="far fa-comment"></i></button>
+                                                        <button class="btn btn-primary px-5 rad-md"><i class="fas fa-calendar-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center w-100 p-absolute" style="left: 0; right: 0; bottom: -10px;">
-                        <button class="btn-primary shadow-primary"><i class="fas fa-search"></i> Cari jadwal</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-10 p-relative">
+                <div class="blue-box-rad-lg bg-primary d-inline-block d-lg-none d-md-none" style="width: 100%; height: 200px;"></div>
+                <div class="p-relative w-100 bg-white h-100 card-profile-meet" style="margin-top: 8rem;">
+                    <div class="back-profile-meet m-3 btn-warning p-2 px-3"><i class="fas fa-arrow-right"></i></div>
+                    <div class="img-profile-doctor" style="background-image: url('../img/doctors/teamwork.png');"></div>
+                    <div class="w-100 p-relative" style="top: -15px;">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                                <button class="btn btn-secondary p-3 px-3"><i class="far fa-comment"></i></button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                <div class="image-profile-doctor p-0 p-absolute">
+                                    <img src="../img/doctors/aku.png" class="h-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                                <button class="btn btn-danger p-3 px-3"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center p-relative" style="top: -24px;">
+                                <h3 class="h">Dr. Khusnul Khuluq</h3>
+                                <p class="p" style="font-size: .8rem;">Spesialis Pilek <span class="mx-2">|</span> Dr RS Purwosari</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center p-relative">
+                                <p class="p"><i class="fas fa-heart text-danger"></i> 142 Favorited by other person</p>
+                            </div>
+                        </div>
+                        <div class="row px-3 mt-5">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h4 class="h">Portofolio</h4>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="w-100 rad-md overflow-hidden p-relative portofolio">
+                                    <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/certificates/1.png');"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="w-100 rad-md overflow-hidden p-relative portofolio">
+                                    <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/certificates/3.png');"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="w-100 rad-md overflow-hidden p-relative portofolio">
+                                    <div class="p-absolute more-portofolio p-absolute w-100 h-100 text-center">3 Item Lain</div>
+                                    <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/certificates/2.png');"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-3 mt-5">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h4 class="h">Album</h4>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="w-100 rad-md overflow-hidden p-relative album">
+                                    <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/ninno.PNG');"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="w-100 rad-md overflow-hidden p-relative album">
+                                    <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/album/ninno1.jpg');"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="w-100 rad-md overflow-hidden p-relative album">
+                                    <div class="p-absolute more-album p-absolute w-100 h-100 text-center">5 Item Lain</div>
+                                    <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/album/ninno2.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-3 mt-5">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <button class="btn-white border-0 p-3 w-100" style="box-sizing: border-box;"><i class="fas fa-angle-down"></i> More Detail</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="container-lg py-5">
+    <div class="container-lg p-relative">
+        <div class="blue-box-rad-lg"></div>
+        <div class="container p-relative">
+           
+        </div>
+    </div>
+
+    <footer class="container-lg py-5 p-relative">
         <div class="text-center text-primary-light">
             <h2 class="h">MedicTab</h2>
             <p class="mt-4">
@@ -110,4 +521,31 @@
 <script src="../js/jquery-3.5.1.min.js"></script>
 <script src="../js/responsive.js"></script>
 <script src="../js/components/navbar.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.card-meet').click(function(e) {
+            if(e.target !== $(this)) { 
+                if($(this).find('.display-more-meet').css('display') === 'none') {
+                    $(this).find('.btn-add-meet1').addClass('btn-gainsboro-light btn-arrow-bottom').removeClass('btn-primary');
+                    $(this).find('.btn-add-meet1').fadeOut(250).html('<i class="fas fa-arrow-down"></i>').fadeIn(250)
+                    $('.card-meet').not(this).find('.display-more-meet').slideUp();
+                    $('.card-meet').not(this).find('.btn-add-meet1').removeClass('btn-gainsboro-light btn-calendar-plus').addClass('btn-primary')
+                    $('.card-meet').not(this).find('.btn-add-meet1').fadeOut(250).html('<i class="fas fa-calendar-plus"></i>').fadeIn(250)
+                } else {
+                    $(this).find('.btn-add-meet1').removeClass('btn-gainsboro-light btn-calendar-plus').addClass('btn-primary');
+                    $(this).find('.btn-add-meet1').fadeOut(250).html('<i class="fas fa-calendar-plus"></i>').fadeIn(250)
+                }
+                $(this).find('.display-more-meet').slideToggle();
+            }
+        });
+
+        $('.show-user').click(function() {
+            $('.card-profile-meet').toggleClass('card-profile-meet-show')
+        });
+
+        $('.card-profile-meet').click(function() {
+            $('.card-profile-meet').toggleClass('card-profile-meet-show')
+        });
+    });
+</script>
 </html>

@@ -263,7 +263,28 @@
     transform: scale(1.1);
     opacity: .5;
 }
-
+@media screen and (max-width: 576px) {
+    .card-image-article img {
+        transition: all .3s;
+        height: 100% !important;
+        width: auto !important;
+    }
+    .text-card-other {
+        font-size: .9rem !important;
+    }
+    .card-body p {
+        font-size: .75rem !important;
+    }
+    .card-body p:nth-child(2) {
+        font-size: .75rem !important;
+        margin-bottom: 5px;
+    }
+    .card-body button {
+        bottom: -2px !important;
+        padding: 10px 30px;
+    }
+    
+}
 .avatar-doctor {
     width: 50px;
     height: 50px;
@@ -477,4 +498,329 @@
     position: absolute;
     top: -30px;
     border: 5px solid white;
+}
+.card-meet {
+    position: relative;
+    box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+}
+.card-meet:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px .5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.card-meet::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    border-radius: 16px;
+    background-color: #10458f;
+}
+.blue-box-rad-lg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 100px;
+    border-bottom-right-radius: 36px;
+    border-bottom-left-radius: 36px;
+}
+.box-right-primary {
+    height: 100%;
+    width: 10%;
+    top: 0;
+    right: -10%;
+    position: absolute;
+    background-color: #1D69D6;
+}
+.card-profile-meet {
+    border-top-left-radius: 36px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.img-profile-doctor {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+.image-profile-doctor {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 100rem;
+    border: 5px solid white;
+    top: -30px;
+    position: relative;
+    box-sizing: border-box;
+}
+.image-profile-doctor img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.image-profile-doctor-meet {
+    width: 60px;
+    height: 60px;
+    top: 1.1rem;
+    display: inline-block;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 100rem;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+.display-more-meet {
+    display: none;
+}
+.meets-list {
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 1rem;
+    width: 102%;
+}
+.portofolio {
+    height: 90px;
+    background-color: #1D69D6;
+}
+.album {
+    height: 130px;
+    background-color: #1D69D6;
+}
+.img-portofolio {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transition: all .3s;
+}
+.img-portofolio:hover {
+    transform: scale(1.1);
+    opacity: .7;
+}
+.more-portofolio {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    line-height: 90px;
+    color: white;
+    z-index: 10;
+}
+.more-album {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    line-height: 130px;
+    color: white;
+    z-index: 10;
+}
+.back-profile-meet {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    top: 0;
+    display: none;
+}
+@media screen and (max-width: 1199px) {
+    .back-profile-meet {
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        top: 0;
+        display: inline-block;
+    }
+    .card-profile-meet {
+        position: fixed;
+        width: 50% !important;
+        z-index: 100;
+        right: -1000px;
+        margin-top: 5rem !important;
+        height: 87%;
+        bottom: 0px !important;
+        transition: all .3s;
+        overflow-y: auto;
+    }
+    .card-profile-meet-show {
+        right: 0 !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .button-calendar-add {
+        height: 30px;
+        bottom: 0 !important;
+        margin-left: 10px;
+        width: 80% !important;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .card-profile-meet-show {
+        right: 0 !important;
+    }
+    .card-profile-meet {
+        position: fixed;
+        width: 100% !important;
+        z-index: 100;
+        margin-top: 5rem !important;
+        transition: all .3s;
+        bottom: 0px !important;
+        right: -1000px;
+        height: 87%;
+        overflow-y: auto;
+    }
+    .card-meet::after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0;
+        width: 100%;
+        height: 10px;
+        border-radius: 16px;
+        background-color: #10458f;
+    }
+    .main-course {
+        border-right: none !important;
+    }
+}
+
+.jumbotron-course {
+    width: 60%;
+    height: 100%;
+    background-color: #10458f;
+    top: 0;
+    background-image: url('../img/course/jumbotron.png');
+    background-size: cover;
+    right: 0;
+}
+.jumbotron-course .linear-course {
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #1D69D6, rgba(7, 42, 124, 0.7));
+}
+
+.card-main-course {
+    height: 320px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s;
+}
+.cardCourse {
+    background-color: #1DD693;
+}
+.card-submain-course:hover,
+.card-main-course:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.card-submain-course {
+    height: 150px;
+    box-sizing: border-box;
+    transition: all .3s;
+    background-size: cover;
+    background-position: center;
+}
+.main-course {
+    border-right: 1px solid gainsboro;
+}
+.widget-course {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.menu-course-detail {
+    width: 20% !important;
+    z-index: 0;
+    transition: all .3s;
+    box-sizing: border-box;
+}
+.cover-course {
+    background-size: cover;
+    background-position: center;
+}
+.menu-course-detail ul li {
+    cursor: pointer;
+    transition: all .3s;
+    background-color: transparent;
+}
+.menu-course-detail ul li:hover {
+    background-color: gainsboro;
+}
+.widget-name-course {
+    display: inline-block;
+}
+.toggle-menu-course {
+    display: none;
+    top: 100px;
+    right: 20px;
+}
+@media screen and (max-width: 1199px) {
+    .widget-name-course {
+        display: none;
+    }   
+    .menu-course-detail ul li {
+        text-align: center;
+        padding: 18px 0 !important;
+    }
+    .menu-course-detail {
+        left: -1000px;
+    }
+    .menu-course-detail-show {
+        left: 0px;
+    }
+    .toggle-menu-course {
+        display: inline-block;
+        top: 100px;
+        right: 20px;
+    }
+}
+.card-main-article {
+    height: 320px;
+    transition: all .3s;
+}
+.card-other-article {
+    transition: all .3s;
+    height: 100px;
+}
+.img-article {
+    background-size: cover;
+    background-position: center;
+    transition: all .3s;
+    left: 0;
+    top: 0;
+}
+.other-article {
+    max-height: 435px;
+    min-height: 435px;
+    transition: all .3s;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.o-article {
+    box-sizing: border-box;
+    transition: all .3s;
+    box-shadow: 0px .25rem .5rem rgba(10, 10, 10, 0.1);
+}
+.o-article:hover {
+    box-shadow: 0px .35rem .7rem rgba(10, 10, 10, 0.15);
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+.o-article:hover .card-other-article {
+    transform: translateY(-20px);
+    box-shadow: 0px .5rem .7rem rgba(10, 10, 10, 0.15);
+}
+.card-main-article:hover .img-article {
+    opacity: .7;
+    transform: scale(1.05);
+}
+.img-jumbotron {
+    opacity: .5;
 }
