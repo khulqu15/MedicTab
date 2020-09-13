@@ -427,6 +427,10 @@ body {
     box-sizing: border-box;
     border: 1px solid #ffd720 !important;
 }
+.border-danger {
+    box-sizing: border-box;
+    border: 1px solid #c53737 !important;
+}
 .border-gray {
     box-sizing: border-box;
     border: 1px solid gray !important;

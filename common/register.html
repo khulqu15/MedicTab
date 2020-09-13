@@ -16,27 +16,182 @@
     <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="stylesheet" href="../css/other.css">
 </head>
-<body>
-    <!-- <div class="bg-primary"> -->
-        <div class="row my-6 py-2">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <form action="" class="pt-4">
-                    <h1>Register</h1>
-                    <p class="pt-3">Name</p>
-                    <input type="text" class="login-form mt-2 py-3 px-3">
-                    <p>Email</p>
-                    <input type="text" class="login-form mt-2 py-3 px-3">
-                    <p>Password</p>
-                    <input type="text" class="login-form2 mt-2 py-3 px-3">
-                    <p>Confirm Password</p>
-                    <input type="text" class="login-form2 mt-2 py-3 px-3">
-                    <p>Phone Number</p>
-                    <input type="text" class="login-form mt-2 py-3 px-3">
-                    <button class="btn-primary mt-5 login-button py-2" style="border-radius: 16px;">Register</button>
-                    <button class="btn-white mt-2 login-button py-2" style="border-color: 1px solid #D8D8D8;box-sizing: border-box; border-radius: 16px;">Button</button>
-                </form>
+<body class="bg-gainsboro-light p-relative" style="overflow-y: hidden;">
+    <div class="rect-top-register bg-secondary p-absolute"></div>
+    <div class="rect-bottom-register bg-primary p-absolute"></div>
+    <div class="container py-8 p-relative">
+        <div class="w-100 p-relative text-right">
+            <button class="btn-transparent border-primary border-0 px-5 py-3" onclick="window.location.href = '../index.html'"><i class="fas fa-home"></i> Home</button>
+        </div>
+        <div class="row py-7">
+            <div class="col-lg-3 col-md-2 col-sm-1 col-xs-0"></div>
+            <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                <div class="w-100 rad-md bg-white p-3 px-4">
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <h2 class="h">Register</h2>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <button class="btn-primary py-2 px-4" id="user-btn">User</button>
+                            <button class="btn-white border-primary py-2 px-4" id="dokter-btn">Dokter</button>
+                        </div>
+                    </div>
+                    <label for="nama" class="ml-2 mt-2 d-inline-block" style="font-size: .88rem;">Nama</label>
+                    <input type="text" value="Mohammad Khusnul Khuluq" name="nama" id="nama" class="w-100 border-secondary mt-2 mb-1 border-0 p-3 px-3 bg-gainsboro-light rad-md" placeholder="Your name here..">
+                    <div class="text-right pr-3 p-relative">
+                        <small class="text-secondary p-absolute" style="top: -38px; right: 15px;"><i class="fas fa-check"></i></small>
+                    </div>
+                    <label for="email" class="ml-2 mt-2 d-inline-block" style="font-size: .88rem;">email</label>
+                    <input value="khusnul.ninno#sidescript.com" type="email" name="email" id="email" class="w-100 my-2 border-0 border-danger p-3 px-3 bg-gainsboro-light rad-md" placeholder="example@domain.com">
+                    <div class="text-right pr-3 p-relative">
+                        <small class="text-danger p-absolute" style="top: -42px; right: 15px;"><i class="fas fa-times"></i></small>
+                    </div>
+                    <label for="password" class="ml-2 mt-2 d-inline-block" style="font-size: .88rem;">Password</label>
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col-lg-10 col md-10 col-sm-10 col-xs-10">
+                                <input type="password" value="secretservice123" name="password" id="password" class="w-100 my-2 border-0 p-3 px-3 bg-gainsboro-light rad-md">
+                                <div class="w-100">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pt-1 rad bg-secondary"></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pt-1 rad bg-secondary"></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pt-1 rad bg-secondary"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col md-2 col-sm-2 col-xs-2">
+                                <button id="btn-pass" class="btn-white py-3 my-2 w-100 rad-md border-0"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="repassword" class="ml-2 mt-2 d-inline-block" style="font-size: .88rem;">Re-type Password</label>
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col-lg-10 col md-10 col-sm-10 col-xs-10">
+                                <input type="password" value="123" name="repassword" id="repassword" class="w-100 my-2 border-0 p-3 px-3 bg-gainsboro-light rad-md">
+                                <div class="w-100">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pt-1 rad bg-danger"></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pt-1 rad bg-gainsboro"></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pt-1 rad bg-gainsboro"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col md-2 col-sm-2 col-xs-2">
+                                <button id="btn-repass" class="btn-white py-3 my-2 w-100 rad-md border-0"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="phoneNumber" class="ml-2 mt-2 d-inline-block" style="font-size: .88rem;">Phone number</label>
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col-lg-3 col md-3 col-sm-3 col-xs-3 text-center p-relative">
+                                <div class="bg-white phone-number py-3 my-2 w-100 rad-md border-0 text-center">
+                                    <img src="../img/illust/indonesia.png" class="d-inline-block" width="20px" alt=""> 
+                                    <span class="d-inline-block p-relative" style="font-size: .8rem; top: -5px;">+62</span>
+                                    <span id="toggle-indicator" class="p-relative ml-3" style="font-size: .8rem; top: -5px;"><i class="fas fa-caret-up"></i></span>
+                                </div>
+                                <div class="list-code-number p-absolute rad" style="display: none;">
+                                    <div class="list-code p-2 pb-1">
+                                        <img src="../img/illust/indonesia.png" class="d-inline-block" width="20px" alt=""> 
+                                        <span class="d-inline-block p-relative" style="font-size: .8rem; top: -5px;">+62</span>
+                                    </div>
+                                    <div class="list-code p-2 pb-1">
+                                        <img src="../img/illust/usa.png" class="d-inline-block" width="20px" alt=""> 
+                                        <span class="d-inline-block p-relative ml-2" style="font-size: .8rem; top: -5px;">+1 </span>
+                                    </div>
+                                    <div class="list-code p-2 pb-1">
+                                        <img src="../img/illust/malaysia.png" class="d-inline-block" width="20px" alt=""> 
+                                        <span class="d-inline-block p-relative" style="font-size: .8rem; top: -5px;">+60</span>
+                                    </div>
+                                    <div class="list-code p-2 pb-1">
+                                        <img src="../img/illust/russia.png" class="d-inline-block" width="20px" alt=""> 
+                                        <span class="d-inline-block p-relative ml-2" style="font-size: .8rem; top: -5px;">+7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col md-9 col-sm-9 col-xs-9">
+                                <input type="phoneNumber" name="phoneNumber" id="phoneNumber" class="w-100 my-2 border-0 p-3 px-3 bg-gainsboro-light rad-md">
+                            </div>
+                        </div>
+                    </div>
+                    <label for="photoProfile" class="ml-2 mt-2 d-inline-block" style="font-size: .88rem;">Photo Profile</label>
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col-lg-8 col md-8 col-sm-8 col-xs-8">
+                                <input type="file" name="photoProfile" id="photoProfile" class="w-100 my-2 border-0 p-3 px-3 bg-gainsboro-light rad-md">
+                            </div>
+                            <div class="col-lg-4 col md-4 col-sm-4 col-xs-4 text-center">
+                                <div class="d-inline-block profile-register bg-primary rad-circle overflow-hidden">
+                                    <img src="../img/doctors/male.svg" class="w-100 h-100" alt="" id="preview">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dokterRegis" style="display: none">
+                        <label for="sertifDoktor" class="ml-2 mt-2 d-inline-block" style="font-size: .88rem;">Sertifikat dokter (PDF,JPG,JPEG,PNG)</label>
+                        <div class="w-100">
+                            <div class="row">
+                                <div class="col-lg-12 col md-12 col-sm-12 col-xs-12">
+                                    <input type="file" name="sertifDoktor" id="sertifDoktor" class="w-100 my-2 border-0 p-3 px-3 bg-gainsboro-light rad-md">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 mt-3">
+                        <button class="btn-primary rad-md my-2 w-100 border-0 py-3">Register</button>
+                        <button onclick="window.location.href = 'login.html'" class="btn-white border-primary text-primary rad-md my-2 w-100 border-0 py-3">Login</button>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="w-100 p-relative text-center">
+            <p>@2020 Developed by <a href="https://sidescript-dev.herokuapp.com/">Sidescript dev</a></p>
         </div>
     </div>
 </body>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/responsive.js"></script>
+<script src="../js/components/navbar.js"></script>
+<script src="../js/fontawesome.min.js"></script>
+<script src="../js/all.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/script.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.phone-number').click(function() {
+            $('.list-code-number').slideToggle()
+        });
+        $('#dokter-btn').click(function() {
+            $('#dokterRegis').slideDown();
+            $(this).addClass('btn-primary').removeClass('btn-white border-primary');
+            $('#user-btn').removeClass('btn-primary').addClass('btn-white border-primary');
+        });
+        $('#user-btn').click(function() {
+            $('#dokterRegis').slideUp();
+            $(this).addClass('btn-primary').removeClass('btn-white border-primary');
+            $('#dokter-btn').removeClass('btn-primary').addClass('btn-white border-primary');
+        });
+        $('#btn-pass').click(function() {
+            var x = document.getElementById('password');
+            if(x.type == 'password') {
+                x.type = 'text'
+                $(this).addClass('bg-gainsboro');
+            } else {
+                x.type = 'password'
+                $(this).removeClass('bg-gainsboro');
+            }
+        });
+        $('#btn-repass').click(function() {
+            var x = document.getElementById('repassword');
+            if(x.type == 'password') {
+                x.type = 'text'
+                $(this).addClass('bg-gainsboro');
+            } else {
+                x.type = 'password'
+                $(this).removeClass('bg-gainsboro');
+            }
+        });
+    });
+</script>
+</html>
