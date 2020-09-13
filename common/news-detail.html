@@ -28,7 +28,7 @@
                     <li class="px-3"><a href="meet.html" class="nav-link" style="color: black !important;">Meet</a></li>
                     <li class="px-3"><a href="news.html" class="nav-link active-menu" style="color: black !important;">News</a></li>
                     <li class="px-3"><a href="course.html" class="nav-link" style="color: black !important;">Article</a></li>
-                    <li class="px-3"><a href="#" class="nav-link" style="color: black !important;">Shop</a></li>
+                    <li class="px-3"><a href="shop.html" class="nav-link" style="color: black !important;">Shop</a></li>
                     <div class="px-3 buttons-auth">
                         <button class="border-0 py-2 px-5 btn-primary shadow-black" id="btn-signin">SignIn</button>
                         <button class="rad py-2 text-primary px-4 btn-transparent border-primary" id="btn-signup">SignUp</button>
@@ -40,8 +40,156 @@
             </div>
         </div>
     </nav>
+
+    <div class="container-lg pt-8 mt-3">
+        <div class="p-fixed bg-primary h-100 menu-news-widget">
+            <ul class="px-0 mx-0 text-center" style="list-style-type: none;">
+                <li><i class="fas fa-th-large text-white py-3"></i></li>
+                <li><i class="far fa-comments text-white py-3"></i></li>
+                <li id="share"><i class="fas fa-share-alt text-white py-3 share-toggle"></i></li>
+            </ul>
+            <ul class="m-0 mx-0 text-center" id="share-trigger" style="list-style: none; display: none;">
+                <li class="px-0 py-2" style="box-sizing: border-box;">
+                    <span class="px-3 text-white"><i class="fab fa-facebook"></i></span>
+                </li>
+                <li class="px-0 py-2" style="box-sizing: border-box;">
+                    <span class="px-3 text-white"><i class="fab fa-twitter"></i></span>
+                </li>
+                <li class="px-0 py-2" style="box-sizing: border-box;">
+                    <span class="px-3 text-white"><i class="fab fa-pinterest"></i></span>
+                </li>
+            </ul>
+        </div>
+        <div class="p-fixed bg-gainsboro-light pb-5 h-100 menu-news-point">
+            <ul style="list-style-type: none;" class="text-left">
+                <li class="p-2 py-3 pl-3 bold" onclick="window.location.href = '#title'">Title Article</li>
+            </ul>
+            <ul style="list-style-type: decimal;" class="text-left">
+                <li class="p-2 py-3 ml-5 pl-3 point-class p-relative" id="point-1" onclick="window.location.href = '#point1'">Point 1
+                    <div class="p-absolute" style="right: 20px; top: 18px;"><i class="fas fa-caret-up icon-trigger-point"></i></div>
+                </li>
+                <ul class="p-1 pb-2 pt-1 ml-8 pl-2 subpoint-trigger" id="subpoint-1" style="display: none; list-style: lower-alpha;">
+                    <li class="py-2 pl-3" onclick="window.location.href = '#point1.1'">subpoint1.1</li>
+                    <li class="py-2 pl-3" onclick="window.location.href = '#point1.2'">subpoint1.2</li>
+                    <li class="py-2 pl-3" onclick="window.location.href = '#point1.3'">subpoint1.3</li>
+                    <li class="py-2 pl-3" onclick="window.location.href = '#point1.4'">subpoint1.4</li>
+                    <li class="py-2 pl-3" onclick="window.location.href = '#point1.5'">subpoint1.5</li>
+                </ul>
+                <li class="p-2 py-3 ml-5 pl-3 point-class p-relative" onclick="window.location.href = '#point2'">Point 2</li>
+                <li class="p-2 py-3 ml-5 pl-3 point-class p-relative" onclick="window.location.href = '#point3'">Point 3</li>
+                <li class="p-2 py-3 ml-5 pl-3 point-class p-relative" onclick="window.location.href = '#point4'">Point 4</li>
+            </ul>
+        </div>
+        <button class="toggle-menu-news p-fixed btn-primary p-3 shadow-primary"><i class="fas fa-list"></i></button>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+                <div class="pt-6 px-0 px-md-6">
+                    <h3 class="p text-primary bold mb-2">General</h3>
+                    <div class="cover-course overflow-hidden rad-md mb-3 w-100 bg-primary" style="height: 300px; box-sizing: border-box; background-image: url('../img/course/3.png');"></div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 text-left p">
+                            <i class="far fa-calendar text-primary"></i> <span>20 Agustus 2020</span>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 text-right p">
+                            <i class="far fa-eye text-primary ml-3"></i> <span>1.34k</span>
+                            <i class="far fa-comments text-primary ml-3"></i> <span>19</span>
+                            <i class="fas fa-share-alt text-primary ml-3"></i> <span>26</span>
+                        </div>
+                    </div>
+                    <h1 class="h mt-3" id="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, repellendus!</h1>
+                    <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                    </p>
+                    <h2 class="h mt-2" id="point1">Point 1</h2>
+                    <div class="text-center mt-3">
+                        <img src="../img/new/1.png" class="w-50 d-md-inline-block" alt="">
+                        <a class="d-block p" style="text-decoration: none;" href="https://www.unsplash.com">Sumber Gambar : Unsplash.com</a>
+                    </div>
+                    <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                    </p>
+                    <div class="ml-6">
+                        <h3 class="h mt-2" id="point1.1">Subpoint 1.1</h3>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <h3 class="h mt-2" id="point1.2">Subpoint 1.2</h3>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <div class="text-center mt-3">
+                            <img src="../img/new/2.png" class="w-50 d-md-inline-block" alt="">
+                            <a class="d-block p" style="text-decoration: none;" href="https://www.unsplash.com">Sumber Gambar : Unsplash.com</a>
+                        </div>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <h3 class="h mt-2" id="point1.3">Subpoint 1.3</h3>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <h3 class="h mt-2" id="point1.4">Subpoint 1.4</h3>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <h3 class="h mt-2" id="point1.5">Subpoint 1.5</h3>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                        <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                        </p>
+                    </div>
+                    <h2 class="h mt-2" id="point2">Point 2</h2>
+                    <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                    </p>
+                    <h2 class="h mt-2" id="point3">Point 3</h2>
+                    <div class="text-center mt-3">
+                        <img src="../img/new/3.png" class="w-50 d-md-inline-block" alt="">
+                        <a class="d-block p" style="text-decoration: none;" href="https://www.unsplash.com">Sumber Gambar : Unsplash.com</a>
+                    </div>
+                    <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                    </p>
+                    <h2 class="h mt-2" id="point4">Point 4</h2>
+                    <p class="p mt-2" style="font-size: 1rem; text-indent: 50px;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="../js/jquery-3.5.1.min.js"></script>
 <script src="../js/responsive.js"></script>
 <script src="../js/components/navbar.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.toggle-menu-news').click(function() {
+            $('.menu-news-point').toggleClass('menu-news-point-show');
+            $('.menu-news-widget').toggleClass('menu-news-widget-show');
+        });
+        $('#share').click(function() {
+            $('#share-trigger').slideToggle();
+        });
+        $('#point-1').click(function() {
+            $(this).find('.icon-trigger-point').toggleClass('fa-caret-up').toggleClass('fa-caret-down');
+            $('#subpoint-1').slideToggle();
+        });
+    });
+</script>
 </html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop detail | MedicTab</title>
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/other.css">
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/responsive.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/components/navbar.js"></script>
+    <script src="../js/fontawesome.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        function incrementValue() {
+            let value = parseInt($('#quantity').val());
+            let increments = value + 1;
+            $('#quantity').val(increments); 
+            if(increments >= 1) {
+                $('#decrements-btn').removeAttr('disabled').removeClass('btn-disabled');
+            } else {
+                $('#decrements-btn').attr('disabled').addClass('btn-disabled');
+            }
+        }
+        function decrementValue() {
+            let value = parseInt($('#quantity').val());
+            let increments = value - 1;
+            if(increments >= 1) {
+                $('#decrements-btn').removeAttr('disabled').removeClass('btn-disabled');
+            } else {
+                $('#decrements-btn').addClass('btn-disabled');
+                increments = 1;
+            }
+            $('#quantity').val(increments); 
+        }
+    </script>
+</head>
+<body>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+           -moz-appearance: textfield;
+        }
+    </style>
+    <nav class="navbar py-4 px-3 p-fixed t-0 w-100">
+        <div class="d-flex">
+            <div class="brand ml-4">
+                <div class="d-flex text-dark">
+                <h3 class="h brand-title">MedicTab</h3>
+            </div>
+            </div>
+            <div class="menu p-absolute text-center d-md-none r-0 pr-7" id="nav-menu">
+                <ul class="nav-ul d-flex w-100 d-md-inline-block">
+                    <li class="px-3"><a href="../index.html" class="nav-link" style="color: black !important;">Home</a></li>
+                    <li class="px-3"><a href="consultation.html" class="nav-link" style="color: black !important;">Consultation</a></li>
+                    <li class="px-3"><a href="meet.html" class="nav-link" style="color: black !important;">Meet</a></li>
+                    <li class="px-3"><a href="news.html" class="nav-link" style="color: black !important;">News</a></li>
+                    <li class="px-3"><a href="course.html" class="nav-link" style="color: black !important;">Article</a></li>
+                    <li class="px-3"><a href="shop.html" class="nav-link active-menu" style="color: black !important;">Shop</a></li>
+                    <div class="px-3 buttons-auth">
+                        <button class="border-0 py-2 px-5 btn-primary shadow-black" id="btn-signin">SignIn</button>
+                        <button class="rad py-2 text-primary px-4 btn-transparent border-primary" id="btn-signup">SignUp</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-toggler d-none d-md-inline-block p-absolute r-0 mr-8" id="nav-toggler">
+                <i class="fas fa-bars text-black" style="color: black !important;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pt-8 mt-8">
+        <div class="row mt-6">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="w-100 img-main-shop">
+                    <div class="px-2">
+                        <div class="w-100 rad-md overflow-hidden p-relative card-img-main-shop" style="background-image: url('../img/shop/categories/1.jpg');"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="w-100 rad-md overflow-hidden p-relative card-img-main-shop" style="background-image: url('../img/shop/categories/2.jpg');"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="w-100 rad-md overflow-hidden p-relative card-img-main-shop" style="background-image: url('../img/shop/categories/3.jpg');"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="w-100 rad-md overflow-hidden p-relative card-img-main-shop" style="background-image: url('../img/shop/categories/4.jpg');"></div>
+                    </div>
+                </div>
+                <div class="w-100 img-other-shop mt-2 px-2">
+                    <div class="px-2">
+                        <div class="w-100 rad overflow-hidden p-relative card-img-other-shop" style="background-image: url('../img/shop/categories/1.jpg');"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="w-100 rad overflow-hidden p-relative card-img-other-shop" style="background-image: url('../img/shop/categories/2.jpg');"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="w-100 rad overflow-hidden p-relative card-img-other-shop" style="background-image: url('../img/shop/categories/3.jpg');"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="w-100 rad overflow-hidden p-relative card-img-other-shop" style="background-image: url('../img/shop/categories/4.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="w-100 pb-3" style="border-bottom: 1px solid gainsboro;">
+                    <h1 class="h">Produk Name</h1>
+                    <p class="p" style="font-size: .85rem;">
+                        <span class="my-md-2 pr-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </span>
+                        <span class="my-md-2 px-3" style="border-left: 1px solid gainsboro;">
+                            <b>192</b> Item terjual
+                        </span>
+                        <span class="my-md-2 px-3" style="border-left: 1px solid gainsboro;">
+                            <b>192</b> Dilihat
+                        </span>
+                    </p>
+                </div>
+                <div class="w-100 pt-3">
+                    <div class="row pb-4">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <h4 class="h">Color</h4>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="d-inline-block pl-2 pt-1 pr-4 shop-color mr-2 rad-pill my-md-1" style="padding-bottom: .18rem">
+                                <div class="color d-inline-block" style="background-color: rgb(255, 94, 94);"></div>
+                                <span class="d-inline-block p-relative" style="font-size: .8rem; top: -3px;">Red</span>
+                            </div>
+                            <div class="d-inline-block pl-2 pt-1 pr-4 shop-color mr-2 rad-pill my-md-1" style="padding-bottom: .18rem">
+                                <div class="color d-inline-block" style="background-color: rgb(14, 235, 43);"></div>
+                                <span class="d-inline-block p-relative" style="font-size: .8rem; top: -3px;">Green</span>
+                            </div>
+                            <div class="d-inline-block pl-2 pt-1 pr-4 shop-color mr-2 rad-pill my-md-1" style="padding-bottom: .18rem">
+                                <div class="color d-inline-block" style="background-color: rgb(22, 79, 238);"></div>
+                                <span class="d-inline-block p-relative" style="font-size: .8rem; top: -3px;">Red</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <h4 class="h">Size</h4>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="d-inline-block border-gainsboro px-3 py-1 mr-2 rad-md shop-size" style="font-size: .85rem;">S</div>
+                            <div class="d-inline-block border-gainsboro px-3 py-1 mr-2 rad-md shop-size" style="font-size: .85rem;">M</div>
+                            <div class="d-inline-block border-gainsboro px-3 py-1 mr-2 rad-md shop-size" style="font-size: .85rem;">L</div>
+                            <div class="d-inline-block border-gainsboro px-3 py-1 mr-2 rad-md shop-size" style="font-size: .85rem;">Xl</div>
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <h4 class="h">Quantity</h4>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <button id="decrements-btn" disabled class="btn-disabled d-inline-block btn-primary p-0 btn-quantity rad-circle" onclick="decrementValue()"><i class="fas fa-caret-left"></i></button>
+                            <input type="number" id="quantity" min="1" max="10" class="input-number-shop border-0 bg-gainsboro rad p-2 mx-2" value="1">
+                            <button id="increments-btn" class="d-inline-block btn-primary p-0 btn-quantity rad-circle" onclick="incrementValue()"><i class="fas fa-caret-right"></i></button>
+                            <p class="d-inline-block ml-2 mt-md-4" style="font-size: .8rem;">Min 1 pcs <span class="bg-danger text-white px-3 ml-3 py-2 rad">Tersisa 10 pcs</span></p>
+                        </div>
+                    </div>
+                    <div class="row pb-4 mt-3">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <h4 class="h">Ongkir</h4>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="w-100">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-relative">
+                                        <div id="dropdown-location" class="d-inline-block rad-md border-gainsboro px-3 py-2 w-100 p-relative" style="font-size: .8rem;">
+                                            Pasuruan, Jawatimur
+                                            <div id="down" class="p-absolute" style="right: 15px; top: 8px;"><i class="fas fa-caret-up"></i></div>
+                                        </div>
+                                        <div class="trigger-dropdown-location w-100 rad p-absolute bg-white border-gainsboro mt-3" style="display: none;">
+                                            <div class="arrow-up-dropdown p-absolute" style="border-bottom-color: gainsboro; top: -10px; left: 45%;"></div>
+                                            <div class="w-100 p-2">
+                                                <input type="text" class="border-0 w-100 p-2 bg-gainsboro-light rad" placeholder="Search">
+                                            </div>
+                                            <div class="w-100 location-list bg-primary-light p-2" style="font-size: .85rem;">
+                                                Pasuruan, Jawatimur
+                                            </div>
+                                            <div class="w-100 location-list p-2" style="font-size: .85rem;">
+                                                Surabaya, Jawatimur
+                                            </div>
+                                            <div class="w-100 location-list p-2" style="font-size: .85rem;">
+                                                Malang, Jawatimur
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-relative mt-md-2">
+                                        <div class="text-right w-100 p-absolute" style="top: -20px;">
+                                            <p class="p" style="font-size: .7rem;">
+                                                Start of Rp 9k
+                                            </p>
+                                        </div>
+                                        <button class="btn-white border-0 border-primary rad-md w-100 p-2">Bayar ditempat</button>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <h4 class="h">Info</h4>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="w-100">
+                                <div class="row text-center">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <div class="100" style="border-right: 1px solid gainsboro;">
+                                            <p class="p" style="font-size: .8rem;">Berat</p>
+                                            <h3 class="h d-inline-block">1</h3>
+                                            <p class="p d-inline-block">kg</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                        <div class="100" style="border-right: 1px solid gainsboro;">
+                                            <p class="p" style="font-size: .8rem;">Kondisi</p>
+                                            <h3 class="h d-inline-block">Baru</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <div class="100">
+                                            <p class="p" style="font-size: .8rem;">Garansi</p>
+                                            <h2 class="h d-inline-block"><i class="fas fa-check text-secondary"></i></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <h4 class="h">Kupon</h4>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="w-100">
+                                <div class="row text-center">
+                                    <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12">
+                                       <div class="w-100 bg-primary p-relative rad-md overflow-hidden card-kupon-shop text-white text-center">
+                                        <div class="animation-card-kupon p-absolute"></div>    
+                                        <div class="p-relative">
+                                                <h4 class="h">Discount 10%</h4>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12">
+                                        <div class="w-100 bg-primary p-relative rad-md overflow-hidden card-kupon-shop text-white text-center">
+                                            <div class="animation-card-kupon p-absolute"></div>    
+                                            <div class="p-relative">
+                                                <h4 class="h">Discount 20%</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <h2 class="h mt-3" style="color: rgb(248, 149, 36);">Rp 120.000,-</h2>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right pt-2">
+                            <button class="btn-white border-warning border-0 rad-md px-4 py-2 text-black bold"><i class="fas fa-cart-plus"></i></button>
+                            <button class="btn-warning border-0 rad-md px-4 py-3 text-black bold">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg py-3 bg-primary my-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <button class="btn-primary border-0 border-white text-white px-4 py-3 rad-md">Report</button>
+                    <button class="btn-primary border-0 border-white text-white px-4 py-3 rad-md">Share</button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                    <button class="btn-white text-dark border-0 border-white px-4 py-3 rad-md" id="description-btn">Description</button>
+                    <button class="btn-primary text-white border-0 border-white px-4 py-3 rad-md" id="review-btn">Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my-4">
+                <div class="w-100" id="description">
+                    <p class="mb-2">Deskripsi dari produk diatas terbuat dari Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quidem dolores inventore quo voluptas ab, eaque cupiditate tenetur quia aperiam.</p>
+                    <p class="mb-2">Spesifikasi :
+                        <ol class="ml-3 mb-3">
+                            <li class="pl-3">Lorem ipsum dolor sit amet consectetur.</li>
+                            <li class="pl-3">Lorem ipsum dolor sit amet consectetur.</li>
+                            <li class="pl-3">Lorem ipsum dolor sit amet consectetur.</li>
+                            <li class="pl-3">Lorem ipsum dolor sit amet consectetur.</li>
+                            <li class="pl-3">Lorem ipsum dolor sit amet consectetur.</li>
+                        </ol>
+                    </p>
+                    <p class="mb-2">Deskripsi dari produk diatas terbuat dari Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quidem dolores inventore quo voluptas ab, eaque cupiditate tenetur quia aperiam.</p>
+                    <p class="mb-2">Deskripsi dari produk diatas terbuat dari Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quidem dolores inventore quo voluptas ab, eaque cupiditate tenetur quia aperiam.</p>
+                </div>
+                <div class="w-100 d-none" id="review">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="w-100 card-review bg-gainsboro-light border-gainsboro rad-md p-relative overflow-hidden">
+                                <div class="header-card p-3 pb-2">
+                                    <div class="profile-card-review overflow-hidden rad-circle bg-primary d-inline-block">
+                                        <img src="../img/doctors/male.svg" class="w-100 h-100" alt="">
+                                    </div>
+                                    <h3 class="h d-inline-block p-relative ml-2" style="top: -12px;">User</h3>
+                                </div>
+                                <div class="body-card">
+                                    <div class="w-100">
+                                        <textarea name="review" id="review" class="w-100 bg-white border-0 rad p-2 mb-2" rows="12" placeholder="Type your review"></textarea>
+                                    </div>
+                                </div>
+                                <div class="footer-card w-100">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 p-2 px-3 pb-3">
+                                            <p style="font-size: .85rem;">
+                                                <span id="star1"><i class="fas fa-star star-rating"></i></span>
+                                                <span id="star2"><i class="fas fa-star star-rating"></i></span>
+                                                <span id="star3"><i class="fas fa-star star-rating"></i></span>
+                                                <span id="star4"><i class="fas fa-star star-rating"></i></span>
+                                                <span id="star5"><i class="fas fa-star star-rating"></i></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="w-100 card-reviews w-100 p-relative rad-md border-gainsboro mb-2 bg-white py-1 px-3">
+                                <span class="dropdown-review-toggle p-absolute" data-reviewId="1">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </span>
+                                <div class="header-card p-2 pb-2">
+                                    <div class="profile-card-review overflow-hidden rad-circle bg-primary d-inline-block">
+                                        <img src="../img/doctors/aku.png" class="w-100 h-100" alt="">
+                                    </div>
+                                    <div class="h d-inline-block p-relative ml-2" style="top: 0px;">
+                                        <h3 class="h">Dr Khusnul .K</h3>
+                                        <p class="p p-relative" style="font-size: .75rem; top: -4px;"><span class="pr-3">Satu jam yang lalu</span>
+                                            <span style="border-left: 1px solid gainsboro;">
+                                                <span class="ml-3"><i class="fas fa-star text-warning star-rating"></i></span>
+                                                <span><i class="fas fa-star text-warning star-rating"></i></span>
+                                                <span><i class="fas fa-star text-warning star-rating"></i></span>
+                                                <span><i class="fas fa-star text-warning star-rating"></i></span>
+                                                <span><i class="fas fa-star text-warning star-rating"></i></span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="body-card pt-2">
+                                        <p>Baguss..! Sangan Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum omnis maxime officiis accusantium, nulla ipsum! Ipsum ea deleniti veniam expedita cumque autem unde totam.</p>
+                                    </div>
+                                </div>
+                                <div class="dropdownChat"> 
+                                    <div class="chat-dropdown p-relative border-gainsboro" data-reviewId="1">
+                                        <div class="dropTriangle w-100 p-absolute text-center" style="border-bottom-color: gainsboro !important;">
+                                            <div class="d-inline-block arrow-up-dropdown" style="border-bottom-color: gainsboro !important;"></div>
+                                        </div>
+                                        <ul>
+                                            <li>Balas</li>
+                                            <li id="report">Report</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 card-reviews w-100 p-relative rad-md border-gainsboro mb-2 bg-white py-1 px-3">
+                                <span class="dropdown-review-toggle p-absolute" data-reviewId="2">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </span>
+                                <div class="header-card p-2 pb-2">
+                                    <div class="profile-card-review overflow-hidden rad-circle bg-primary d-inline-block">
+                                        <img src="../img/doctors/ilham.png" class="w-100 h-100" alt="">
+                                    </div>
+                                    <div class="h d-inline-block p-relative ml-2" style="top: 0px;">
+                                        <h3 class="h">Dr Ilham .M</h3>
+                                        <p class="p p-relative" style="font-size: .75rem; top: -4px;"><span class="pr-3">2 jam yang lalu</span>
+                                            <span style="border-left: 1px solid gainsboro;">
+                                                <span class="ml-3"><i class="fas fa-star text-warning star-rating"></i></span>
+                                                <span><i class="fas fa-star text-warning star-rating"></i></span>
+                                                <span><i class="fas fa-star text-warning star-rating"></i></span>
+                                                <span><i class="fas fa-star text-warning star-rating"></i></span>
+                                                <span><i class="fas fa-star text-warning star-rating"></i></span>
+                                            </span>
+                                        </p>    
+                                    </div>
+                                    <div class="body-card pt-2">
+                                        <p>Baguss..! Sangan Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum omnis maxime officiis accusantium, nulla ipsum! Ipsum ea deleniti veniam expedita cumque autem unde totam.</p>
+                                    </div>
+                                </div>
+                                <div class="dropdownChat"> 
+                                    <div class="chat-dropdown p-relative border-gainsboro" data-reviewId="2">
+                                        <div class="dropTriangle w-100 p-absolute text-center" style="border-bottom-color: gainsboro !important;">
+                                            <div class="d-inline-block arrow-up-dropdown" style="border-bottom-color: gainsboro !important;"></div>
+                                        </div>
+                                        <ul>
+                                            <li>Balas</li>
+                                            <li id="report">Report</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100">
+                                <button class="btn-white border-0 border-primary w-100 py-3 rad">Load more reviews</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-lg py-5">
+        <div class="text-center text-primary-light">
+            <h2 class="h">MedicTab</h2>
+            <p class="mt-4">
+                <span class="mx-3 my-2 d-inline-block d-md-block">Home</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Consultation</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Meet</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Course</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Articles</span>
+            </p>
+            <p class="mt-4">
+                <span><i class="fab fa-instagram mx-3"></i></span>
+                <span><i class="fab fa-facebook mx-3"></i></span>
+                <span><i class="fab fa-twitter mx-3"></i></span>
+            </p>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-xs-6 text-left">
+                        <p>English</p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p>Mohammad Khusnul Khuluq</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $('#review-btn').click(function() {
+            $(this).addClass('btn-white text-dark').removeClass('btn-primary text-white');
+            $('#description-btn').removeClass('btn-white text-dark').addClass('btn-primary text-white');
+            $('#review').removeClass('d-none');
+            $('#description').addClass('d-none');
+        });
+        $('#description-btn').click(function() {
+            $(this).addClass('btn-white text-dark').removeClass('btn-primary text-white');
+            $('#review-btn').removeClass('btn-white text-dark').addClass('btn-primary text-white');
+            $('#review').addClass('d-none');
+            $('#description').removeClass('d-none');
+        });
+        $('.dropdown-review-toggle').click(function() {
+            var id = $(this).attr('data-reviewId');
+            $('.dropdownChat').find(".chat-dropdown[data-reviewId='" + id + "']").slideToggle();
+        });
+        $('#star1').mouseover(function() {
+            $(this).addClass('text-warning');
+        });
+        $('#star1').mouseleave(function() {
+            $(this).removeClass('text-warning');
+        });
+        $('#star2').mouseover(function() {
+            $('#star1').addClass('text-warning');
+            $(this).addClass('text-warning');
+        });
+        $('#star2').mouseleave(function() {
+            $('#star1').removeClass('text-warning');
+            $(this).removeClass('text-warning');
+        });
+        $('#star3').mouseover(function() {
+            $('#star1').addClass('text-warning');
+            $('#star2').addClass('text-warning');
+            $(this).addClass('text-warning');
+        });
+        $('#star3').mouseleave(function() {
+            $('#star1').addClass('text-warning');
+            $('#star2').removeClass('text-warning');
+            $(this).removeClass('text-warning');
+        });
+        $('#star4').mouseover(function() {
+            $('#star1').addClass('text-warning');
+            $('#star2').addClass('text-warning');
+            $('#star3').addClass('text-warning');
+            $(this).addClass('text-warning');
+        });
+        $('#star4').mouseleave(function() {
+            $('#star1').removeClass('text-warning');
+            $('#star2').removeClass('text-warning');
+            $('#star3').removeClass('text-warning');
+            $(this).removeClass('text-warning');
+        });
+        $('#star5').mouseover(function() {
+            $('#star1').addClass('text-warning');
+            $('#star2').addClass('text-warning');
+            $('#star3').addClass('text-warning');
+            $('#star4').addClass('text-warning');
+            $(this).addClass('text-warning');
+        });
+        $('#star5').mouseleave(function() {
+            $('#star1').removeClass('text-warning');
+            $('#star2').removeClass('text-warning');
+            $('#star3').removeClass('text-warning');
+            $('#star4').removeClass('text-warning');
+            $(this).removeClass('text-warning');
+        });
+        $('#dropdown-location').click(function() {
+            $('.trigger-dropdown-location').slideToggle()
+        });
+        $('.shop-color').click(function() {
+            $(this).toggleClass('bg-gainsboro');
+            $('.shop-color').not(this).removeClass('bg-gainsboro');
+        });
+        $('.shop-size').click(function() {
+            $(this).toggleClass('bg-gainsboro');
+            $('.shop-size').not(this).removeClass('bg-gainsboro');
+        });
+        $('.img-main-shop').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            asNavFor: '.img-other-shop',
+            dots: false,
+            arrows: false,
+        })
+        $('.img-other-shop').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            centerMode: true,
+            dots: false,
+            asNavFor: '.img-main-shop',
+            arrows: false,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        })
+    });
+</script>
+</html>

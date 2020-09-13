@@ -51,6 +51,9 @@ body {
     transition: all .3s;
     cursor: pointer;
 }
+.btn-disabled {
+    opacity: .4;
+}
 .btn-white:hover {
     background-color: gainsboro;
 }
@@ -419,6 +422,10 @@ body {
 .border-gainsboro {
     box-sizing: border-box;
     border: 1px solid gainsboro !important;
+}
+.border-warning {
+    box-sizing: border-box;
+    border: 1px solid #ffd720 !important;
 }
 .border-gray {
     box-sizing: border-box;

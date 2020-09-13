@@ -149,6 +149,7 @@
 .card-shop {
     border-radius: 16px;
     height: 230px;
+    cursor: pointer;
 }
 .card-shop .card-image-top {
     background-color: #076945;
@@ -526,6 +527,7 @@
     border-style: none;
     width: 75%;
     background-color: #F1F1F1;
+}
 .card-meet {
     position: relative;
     box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.1);
@@ -850,4 +852,149 @@
 }
 .img-jumbotron {
     opacity: .5;
+}
+.menu-news-widget {
+    transition: all .3s;
+    width: 50px;
+}
+.menu-news-point {
+    width: 20%;
+    transition: all .3s;
+    overflow-y: auto;
+    left: 50px;
+}
+.toggle-menu-news {
+    transition: all .3s;
+    display: none;
+    right: 10px;
+    top: 100px;
+}
+.menu-news-widget ul li {
+    transition: all .3s;
+    cursor: pointer;
+}
+.menu-news-widget ul li:hover {
+    background-color: #10458f;    
+}
+.menu-news-point ul li {
+    transition: all .3s;
+    cursor: pointer;
+}
+.menu-news-point ul li:hover {
+    background-color: gainsboro;    
+}
+
+@media screen and (max-width: 962px) {
+    .menu-news-widget {
+        width: 50px;
+        left: -100px;
+    }
+    .menu-news-point {
+        width: 50%;
+        left: -1000px;
+    }
+    .menu-news-widget-show {
+        transition: all .3s;
+        left: 0px;
+    }
+    .menu-news-point-show {
+        transition: all .3s;
+        left: 50px;
+    }
+    .toggle-menu-news {
+        display: inline-block;
+    }
+}
+
+.card-category-shop {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.card-img-main-shop {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+.card-img-other-shop {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+.shop-color ,.shop-size, #dropdown-location {
+    background-color: rgb(245, 245, 245, 0.5);
+    transition: all .3s;
+}
+.shop-color:hover, .shop-size:hover, #dropdown-location:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+.shop-color .color {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+}
+.btn-quantity {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+}
+.input-number-shop {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    width: 60px;
+}
+.trigger-dropdown-location {
+    width: 120% !important;
+    z-index: 10;
+}
+.location-list {
+    transition: all .3s;
+}
+.location-list:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+    .trigger-dropdown-location {
+        width: 100% !important;
+    }   
+}
+@media screen and (max-width: 992px) {
+    .card-img-main-shop {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.card-kupon-shop {
+    height: 70px;
+    cursor: pointer;
+    line-height: 72px;
+}
+.animation-card-kupon {
+    width: 40%;
+    background-color: #a0c1ee;
+    right: -30%;
+    border-radius: 100rem;
+    height: 40%;
+    transition: all .3s;
+    top: 30%;
+}
+.card-kupon-shop:hover .animation-card-kupon {
+    width: 120%;
+    background-color: #a0c1ee;
+    right: -30%;
+    border-radius: 100rem;
+    height: 60%;
+    top: 20%;
+}
+.profile-card-review {
+    width: 40px;
+    height: 40px;
+}
+.dropdown-review-toggle {
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
 }
