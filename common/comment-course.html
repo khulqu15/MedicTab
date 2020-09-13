@@ -48,11 +48,11 @@
                     <i class="fas fa-th-large text-primary"></i> 
                     <span class="ml-3 widget-name-course">List Carousels</span>
                 </li>
-                <li class="px-5 py-3 bg-gainsboro" onclick="window.location.href = 'course-detail.html'">
+                <li class="px-5 py-3" onclick="window.location.href = 'course-detail.html'">
                     <i class="fas fa-book-open text-primary"></i> 
                     <span class="ml-3 widget-name-course">Article</span>
                 </li>
-                <li class="px-5 py-3"  onclick="window.location.href = 'comment-course.html'">
+                <li class="px-5 py-3 bg-gainsboro"  onclick="window.location.href = 'comment-course.html'">
                     <i class="far fa-comments text-primary"></i> 
                     <span class="ml-3 widget-name-course">Comment</span>
                 </li>
@@ -89,18 +89,95 @@
                     </div>
                 </div>
                 <h1 class="h mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, repellendus!</h1>
-                <p class="p mt-2" style="font-size: 1.1rem; text-indent: 50px;">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
-                </p>
-                <p class="p mt-2" style="font-size: 1.1rem; text-indent: 50px;">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
-                </p>
-                <p class="p mt-2" style="font-size: 1.1rem; text-indent: 50px;">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vero quibusdam quidem quae ratione cumque unde harum fugiat expedita provident cum est architecto quasi qui fugit officiis dolore veniam, aliquam maxime vel iure illo hic distinctio. Soluta labore officia corrupti laboriosam perferendis illum sunt unde atque optio, nesciunt minus similique neque adipisci incidunt sit dolor numquam necessitatibus eligendi dicta minima?
-                </p>
+                <div class="w-100 my-5" id="review">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="w-100 card-review bg-gainsboro-light border-gainsboro rad-md p-relative overflow-hidden">
+                                <div class="header-card p-3 pb-2">
+                                    <div class="profile-card-review overflow-hidden rad-circle bg-primary d-inline-block">
+                                        <img src="../img/doctors/male.svg" class="w-100 h-100" alt="">
+                                    </div>
+                                    <h3 class="h d-inline-block p-relative ml-2" style="top: -12px;">User</h3>
+                                </div>
+                                <div class="body-card">
+                                    <div class="w-100">
+                                        <textarea name="review" id="review" class="w-100 bg-white border-0 rad p-2 mb-2" rows="6" placeholder="Type your review"></textarea>
+                                    </div>
+                                </div>
+                                <div class="footer-card w-100">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 p-2 px-3 pb-3">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 p-2 px-3 pb-3 text-right">
+                                            <button class="btn-primary px-4 py-2 border-0">Send <i class="fas fa-paper-plane"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="w-100 card-reviews w-100 p-relative rad-md border-gainsboro mb-2 bg-white py-1 px-3">
+                                <span class="dropdown-review-toggle p-absolute" data-reviewId="1">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </span>
+                                <div class="header-card p-2 pb-2">
+                                    <div class="profile-card-review overflow-hidden rad-circle bg-primary d-inline-block">
+                                        <img src="../img/doctors/aku.png" class="w-100 h-100" alt="">
+                                    </div>
+                                    <div class="h d-inline-block p-relative ml-2" style="top: 0px;">
+                                        <h3 class="h">Dr Khusnul .K</h3>
+                                        <p class="p p-relative" style="font-size: .75rem; top: -4px;"><span class="pr-3">Satu jam yang lalu</span></p>
+                                    </div>
+                                    <div class="body-card pt-2">
+                                        <p>Baguss..! Sangan Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum omnis maxime officiis accusantium, nulla ipsum! Ipsum ea deleniti veniam expedita cumque autem unde totam.</p>
+                                    </div>
+                                </div>
+                                <div class="dropdownChat"> 
+                                    <div class="chat-dropdown p-relative border-gainsboro" data-reviewId="1">
+                                        <div class="dropTriangle w-100 p-absolute text-center" style="border-bottom-color: gainsboro !important;">
+                                            <div class="d-inline-block arrow-up-dropdown" style="border-bottom-color: gainsboro !important;"></div>
+                                        </div>
+                                        <ul>
+                                            <li>Balas</li>
+                                            <li id="report">Report</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 card-reviews w-100 p-relative rad-md border-gainsboro mb-2 bg-white py-1 px-3">
+                                <span class="dropdown-review-toggle p-absolute" data-reviewId="2">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </span>
+                                <div class="header-card p-2 pb-2">
+                                    <div class="profile-card-review overflow-hidden rad-circle bg-primary d-inline-block">
+                                        <img src="../img/doctors/ilham.png" class="w-100 h-100" alt="">
+                                    </div>
+                                    <div class="h d-inline-block p-relative ml-2" style="top: 0px;">
+                                        <h3 class="h">Dr Ilham .M</h3>
+                                        <p class="p p-relative" style="font-size: .75rem; top: -4px;"><span class="pr-3">2 jam yang lalu</span></p>    
+                                    </div>
+                                    <div class="body-card pt-2">
+                                        <p>Baguss..! Sangan Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum omnis maxime officiis accusantium, nulla ipsum! Ipsum ea deleniti veniam expedita cumque autem unde totam.</p>
+                                    </div>
+                                </div>
+                                <div class="dropdownChat"> 
+                                    <div class="chat-dropdown p-relative border-gainsboro" data-reviewId="2">
+                                        <div class="dropTriangle w-100 p-absolute text-center" style="border-bottom-color: gainsboro !important;">
+                                            <div class="d-inline-block arrow-up-dropdown" style="border-bottom-color: gainsboro !important;"></div>
+                                        </div>
+                                        <ul>
+                                            <li>Balas</li>
+                                            <li id="report">Report</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100">
+                                <button class="btn-white border-0 border-primary w-100 py-3 rad">Load more reviews</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -137,6 +214,10 @@
 <script src="../js/components/navbar.js"></script>
 <script>
     $(document).ready(function() {
+        $('.dropdown-review-toggle').click(function() {
+            var id = $(this).attr('data-reviewId');
+            $('.dropdownChat').find(".chat-dropdown[data-reviewId='" + id + "']").slideToggle();
+        });
         $('#share').click(function() {
             $('#share-trigger').slideToggle();
         });
