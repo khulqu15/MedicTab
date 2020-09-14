@@ -1,3 +1,15 @@
+.img-navbrand {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    top: -5px;
+}
+nav {
+    padding-bottom: 1.2rem !important;
+}
+.brand-title {
+    margin-top: 0px !important;
+}
 #jumbotron-welcome {
     background-size: cover;
 }
@@ -1033,8 +1045,7 @@
     opacity: .5;
     border-radius: 8rem;
     bottom: -20%;
-
-
+}
 .btn-regist {
     background-color: white;
     color: #999999;
@@ -1076,7 +1087,7 @@
 .justify-content-center{
     justify-content: center;
 }
-}
+
 .jumbotron-user {
     background-size: cover;
     background-attachment: fixed;
@@ -1150,4 +1161,4 @@
 .menu-sidebar:nth-child(3) {
     right: 0;
 }
-}
+

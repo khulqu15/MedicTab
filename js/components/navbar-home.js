@@ -13,13 +13,13 @@ $(document).ready(function() {
             $('.brand-title').addClass('text-black');
             $('#nav-toggler i').addClass('text-black');
             $('.nav-link').addClass('text-black');
-            $('.img-navbrand').attr('src', '../img/fav.png')
+            $('.img-navbrand').attr('src', 'img/fav.png')
             $('#btn-signin').addClass('scrolled-btn-signin');
             $('#btn-signup').addClass('scrolled-btn-signup');
         } else {
             $('nav').removeClass('bg-white animate__animated animate__fadeInDown');
             $('.brand-title').removeClass('text-black');
-            $('.img-navbrand').attr('src', '../img/logo.png')
+            $('.img-navbrand').attr('src', 'img/logo.png')
             $('#nav-toggler i').removeClass('text-black');
             $('.nav-link').removeClass('text-black');
             $('#btn-signin').removeClass('scrolled-btn-signin');

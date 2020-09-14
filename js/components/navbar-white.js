@@ -18,9 +18,9 @@ $(document).ready(function() {
             $('#btn-signup').addClass('scrolled-btn-signup');
         } else {
             $('nav').removeClass('bg-white animate__animated animate__fadeInDown');
-            $('.brand-title').removeClass('text-black');
-            $('.img-navbrand').attr('src', '../img/logo.png')
-            $('#nav-toggler i').removeClass('text-black');
+            $('.brand-title').addClass('text-black');
+            $('.img-navbrand').attr('src', '../img/fav.png')
+            $('#nav-toggler i').addClass('text-black');
             $('.nav-link').removeClass('text-black');
             $('#btn-signin').removeClass('scrolled-btn-signin');
             $('#btn-signup').removeClass('scrolled-btn-signup');
