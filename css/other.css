@@ -998,6 +998,41 @@
     top: 15px;
     cursor: pointer;
 }
+.phone-number, .list-code {
+    transition: all .3s;
+}
+.phone-number:hover, .list-code:hover {
+    background-color: rgb(245, 245, 245, 0.5) !important;
+    cursor: pointer;
+}
+.list-code-number {
+    width: 90px;
+    max-height: 100px;
+    background-color: white;
+    box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.1);
+    top: 65px;
+    left: 10px;
+    overflow-y: auto;
+}
+.profile-register {
+    width: 65px;
+    height: 65px;
+}
+.rect-top-register {
+    width: 50%;
+    left: -20%;
+    height: 60%;
+    opacity: .5;
+    border-radius: 8rem;
+    top: -20%;
+}
+.rect-bottom-register {
+    width: 50%;
+    right: -20%;
+    height: 60%;
+    opacity: .5;
+    border-radius: 8rem;
+    bottom: -20%;
 
 
 .btn-regist {
