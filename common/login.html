@@ -15,31 +15,56 @@
     <link rel="stylesheet" href="../css/fontawesome.min.css">
     <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="stylesheet" href="../css/other.css">
+    <link rel="stylesheet" href="../css/auth.css">
 </head>
-<body>
-    <div class="">
-        <div class="row my-8 py-2">
-            <div class="col-md-2"></div>
-            <div class="col-md-4 card-left bg-white"></div>
-            <div class="col-md-4 card-right bg-white">
-                <form action="" class="pt-4">
-                    <h1>Login</h1>
-                    <p class="pt-3">Email or Username</p>
-                    <input class="login-form mt-2 py-3 px-3" type="text" name="" id="" placeholder="example@domain.com">
-                    <p class="pt-3">Password</p>
-                    <input class="login-form mt-2 py-3 px-3" type="password" name="" id="" placeholder="keep hide your password">
-                    <button class="btn-primary mt-5 login-button">Login</button>
-                    <hr class="w-90 my-2">
-                    <button class="btn-white mt5 login-button py-2" style="border-color: 1px solid #D8D8D8;box-sizing: border-box;">Register</button>
-                </form>
-                <center>
-                <p class="mt-6 pt-5 pr-4">
-                    <span><i class="fab fa-instagram mx-3"></i></span>
-                    <span><i class="fab fa-facebook mx-3"></i></span>
-                    <span><i class="fab fa-twitter mx-3"></i></span>
-                </p>
-                </center>
+<body class="p-relative">
+    <div class="p-absolute" style="width: 50%;height: 60%;left: -20%;top: -20%;background: #66F0BE;"></div>
+    <div class="container p-relative" style="z-index: 2;">
+        <div class="row mt-3">
+            <div class="col-md-10"></div>
+            <div class="col-md-1">
+                <a href="../index.html">
+                <button class="btn-home px-5">Home</button>
+                </a>
             </div>
         </div>
+        <div class="row mx-5 my-1 ">
+            <div class="col-md-12">
+                <div class="row box-login bg-white p-4" style="box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.09);border-radius: 20px;">
+                    <div class="col-md-6 card-left p-3 center">
+                        <div class="w-100 text-center p-relative text-white" style="top: 42%;">
+                            <h1 class="h">MedicTab</h1>
+                            <p class="p" style="font-size: 20px;">Best Solution for your health</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 card-right bg-white">
+                        <form action="" class="pt-4">
+                            <h1>Login</h1>
+                            <p class="pt-3">Email or Username</p>
+                            <input class="login-form mt-2 py-3 px-3" type="text" name="" id="" placeholder="example@domain.com">
+                            <p class="pt-3">Password</p>
+                            <input class="login-form mt-2 py-3 px-3" type="password" name="" id="" placeholder="keep hide your password">
+                            <div class="d-flex mt-3" style="align-items: center;font-size: 0.9rem">
+                                <input type="checkbox" name="" class="mr-2" >
+                                <p class="p">Show Password</p>
+                                <p class="p pr-4" style="margin-left: auto;"><a href="">Forgot Password?</a></p>
+                            </div>
+                            <button class="btn-primary  mt-5 login-button bold"  style="font-size: 16px">Login</button>
+                            <hr class="w-90 my-2">
+                            <button class="btn-regist login-button py-2 bold" style="font-size: 16px">Register</button>
+                        </form>
+                        <center>
+                        <p class="mt-6  pr-4 "style="color:  #A4A4A4;">
+                            <span><i class="fab fa-instagram mx-3"></i></span>
+                            <span><i class="fab fa-facebook mx-3"></i></span>
+                            <span><i class="fab fa-twitter mx-3"></i></span>
+                        </p>
+                        </center>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
     </div>
+    <div class="p-absolute" style="width: 50%;height: 40%;right: -20%;bottom: -10%;background:#A1C4F6"></div>
 </body>
