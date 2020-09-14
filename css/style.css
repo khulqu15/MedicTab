@@ -57,7 +57,15 @@ body {
 .btn-white:hover {
     background-color: gainsboro;
 }
-
+.btn-gainsboro-light {
+    background-color: rgb(250, 250, 250);
+    border-radius: .35rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+.btn-gainsboro-light:hover {
+    background-color: gainsboro;
+}
 .btn-transparent {
     background-color: transparent;
     border-radius: .35rem;

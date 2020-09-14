@@ -4,8 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile User Doctor | MedicTab</title>
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/other.css">
 </head>
 <body>
-    
+    <nav class="navbar py-4 px-3 p-fixed t-0 w-100">
+        <div class="d-flex">
+            <div class="brand ml-4">
+                <div class="d-flex text-white">
+                <h3 class="h brand-title">MedicTab</h3>
+            </div>
+            </div>
+            <div class="menu p-absolute text-center d-md-none r-0 pr-7" id="nav-menu">
+                <ul class="nav-ul d-flex w-100 d-md-inline-block">
+                    <li class="px-3"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="px-3"><a href="consultation.html" class="nav-link">Consultation</a></li>
+                    <li class="px-3"><a href="meet.html" class="nav-link active-menu">Meet</a></li>
+                    <li class="px-3"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="px-3"><a href="course.html" class="nav-link">Article</a></li>
+                    <li class="px-3"><a href="shop.html" class="nav-link">Shop</a></li>
+                    <div class="px-3 buttons-auth">
+                        <button class="border-0 py-2 px-5 btn-white shadow-black" id="btn-signin" onclick="window.location.href = 'login.html'">SignIn</button>
+                        <button class="rad py-2 text-white px-4 btn-transparent border-white" id="btn-signup" onclick="window.location.href = 'register.html'">SignUp</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-toggler d-none d-md-inline-block p-absolute r-0 mr-8" id="nav-toggler">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="container-lg bg-primary py-8 jumbotron-user p-relative" style="background-image: url('../img/doctors/teamwork.png');">
+        <div class="overlay-primary"></div>
+        <div class="row py-8">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 py-8"></div>
+        </div>
+    </div>
+    <div class="container p-relative">
+        <button class="btn btn-secondary py-4 px-4 shadow-secondary rad-md btn-chat-user p-absolute" style="font-size: 1rem;"><i class="fas fa-comment"></i></button>
+        <button class="btn btn-gainsboro-light py-3 py-md-4 px-4 rad-md border-0 btn-favorited-user p-absolute" style="font-size: 1rem;"><i id="heart-icon" class="far fa-heart text-danger"></i></button>
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                <div class="profil-user w-100">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 text-center">
+                            <div class="d-inline-block profil-img-user bg-primary p-relative rad-circle overflow-hidden">
+                                <img src="../img/doctors/aku.png" class="w-100 h-100" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 profil-name-user">
+                            <div class="d-inline-block py-3 py-md-2 p-relative w-100">
+                                <h2 class="h">Dr. Khusnul Khuluq</h2>
+                                <p class="p">Spesialis Pilek <span class="text-gainsboro mx-2">|</span> Fullstack Developer</p>
+                                <div class="w-100 mt-3">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                            <p><i class="fas fa-envelope text-primary d-inline-block"></i> ninno.khulqu@gmail.com</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                            <p><i class="fas fa-map-marker-alt text-primary d-inline-block"></i> Purwosari, Pasuruan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="w-100">
+                    <div class="row px-3 mt-5">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h4 class="h">Portofolio</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="w-100 rad-md overflow-hidden p-relative portofolio">
+                                <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/certificates/1.png');"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="w-100 rad-md overflow-hidden p-relative portofolio">
+                                <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/certificates/3.png');"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="w-100 rad-md overflow-hidden p-relative portofolio">
+                                <div class="p-absolute more-portofolio p-absolute w-100 h-100 text-center">3 Item Lain</div>
+                                <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/certificates/2.png');"></div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row px-3 mt-5">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h4 class="h">Album</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="w-100 rad-md overflow-hidden p-relative album">
+                                <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/ninno.PNG');"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="w-100 rad-md overflow-hidden p-relative album">
+                                <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/album/ninno1.jpg');"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="w-100 rad-md overflow-hidden p-relative album">
+                                <div class="p-absolute more-album p-absolute w-100 h-100 text-center">5 Item Lain</div>
+                                <div class="img-portofolio h-100 w-100" style="background-image: url('../img/doctors/album/ninno2.jpg');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3">
+                    <h4 class="h ml-3">Meeting</h4>
+                </div>
+                <div class="w-100 card-meet overflow-hidden w-100 rad-md mt-3 mt-4 mb-5 p-relative bg-white">
+                    <div class="w-100 px-2 py-2" style="box-sizing: border-box;">
+                        <div class="row">
+                            <div class="pt-4 col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <div class="image-profile-doctor-meet d-inline-block p-relative p-0" style="top: -5px;">
+                                    <img src="../img/doctors/aku.png" class="h-100" alt="">
+                                </div>
+                            </div>
+                            <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-3 col-xs-8 text-center">
+                                <h4 class="h mb-0">Dr. Khusnul .K</h4>
+                                <p class="p" style="font-size: .8rem;">Spesialis Pilek</p>
+                            </div>
+                            <div class="pt-4 col-lg-3 col-sm-3 text-center col-xs-6 col-md-3">
+                                <h3 class="h mb-0">17:23 WIB</h3>
+                                <p class="p" style="font-size: .8rem;">30 Minutes</p>
+                            </div>
+                            <div class="pt-4 col-lg-3 col-md-3 px-md-3 col-sm-4 col-xs-6 text-center">
+                                <p class="p" style="font-size: .8rem;">Start On</p>
+                                <h4 class="h mb-0">12 Agustus 2020</h4>
+                            </div>
+                            <div class="pt-3 col-lg-1 col-md-1 col-sm-12 col-xs-12 text-center p-relative">
+                                <button class="btn-add-meet1 w-100 h-100 rad-md btn-primary border-0 p-absolute p-0 button-calendar-add" style="top: 0; right: 0; box-sizing: border-box;"><i class="fas fa-calendar-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-more-meet w-100 px-2 pt-2" style="box-sizing: border-box;">
+                        <div class="row">
+                            <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6" style="border-right: 1px solid gainsboro;">
+                                <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                <p>9am - 12pm</p>
+                            </div>
+                            <div class="text-center pb-3 mb-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <p class="p text-primary mb-2"><i class="fas fa-clock text-primary"></i> Time</p>
+                                <p>9am - 12pm</p>
+                            </div>
+                            <div class="text-right col-lg-4 col-md-4 col-sm-4 col-xs-12 p-relative pt-md-3">
+                                <div class="p-absolute pb-2" style="bottom: 0; right: 0px;">
+                                    <button class="btn btn-primary-light px-3 rad-md show-user d-xl-inline-block d-none"><i class="far fa-user"></i></button>
+                                    <button class="btn btn-primary-light px-3 rad-md"><i class="far fa-comment"></i></button>
+                                    <button class="btn btn-primary px-5 rad-md"><i class="fas fa-calendar-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-lg py-5 p-relative">
+        <div class="text-center text-primary-light">
+            <h2 class="h">MedicTab</h2>
+            <p class="mt-4">
+                <span class="mx-3 my-2 d-inline-block d-md-block">Home</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Consultation</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Meet</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Course</span>
+                <span class="mx-3 my-2 d-inline-block d-md-block">Articles</span>
+            </p>
+            <p class="mt-4">
+                <span><i class="fab fa-instagram mx-3"></i></span>
+                <span><i class="fab fa-facebook mx-3"></i></span>
+                <span><i class="fab fa-twitter mx-3"></i></span>
+            </p>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-xs-6 text-left">
+                        <p>English</p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p>Mohammad Khusnul Khuluq</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/responsive.js"></script>
+<script src="../js/components/navbar.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.btn-favorited-user').click(function() {
+            $('#heart-icon').toggleClass('fas')
+        });
+        $('.card-meet').click(function(e) {
+            if(e.target !== $(this)) { 
+                if($(this).find('.display-more-meet').css('display') === 'none') {
+                    $(this).find('.btn-add-meet1').addClass('btn-gainsboro-light btn-arrow-bottom').removeClass('btn-primary');
+                    $(this).find('.btn-add-meet1').fadeOut(250).html('<i class="fas fa-arrow-down"></i>').fadeIn(250)
+                    $('.card-meet').not(this).find('.display-more-meet').slideUp();
+                    $('.card-meet').not(this).find('.btn-add-meet1').removeClass('btn-gainsboro-light btn-calendar-plus').addClass('btn-primary')
+                    $('.card-meet').not(this).find('.btn-add-meet1').fadeOut(250).html('<i class="fas fa-calendar-plus"></i>').fadeIn(250)
+                } else {
+                    $(this).find('.btn-add-meet1').removeClass('btn-gainsboro-light btn-calendar-plus').addClass('btn-primary');
+                    $(this).find('.btn-add-meet1').fadeOut(250).html('<i class="fas fa-calendar-plus"></i>').fadeIn(250)
+                }
+                $(this).find('.display-more-meet').slideToggle();
+            }
+        });
+    });
+</script>
 </html>
