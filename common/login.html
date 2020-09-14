@@ -17,27 +17,28 @@
     <link rel="stylesheet" href="../css/other.css">
     <link rel="stylesheet" href="../css/auth.css">
 </head>
-<body class="p-relative">
-    <div class="p-absolute" style="width: 50%;height: 60%;left: -20%;top: -20%;background: #66F0BE;"></div>
-    <div class="container p-relative" style="z-index: 2;">
+<body class="bg-gainsboro-light p-relative" style="overflow-y: hidden;">
+    <div class="rect-top-register bg-secondary p-absolute"></div>
+    <div class="rect-bottom-register bg-primary p-absolute"></div>
+    <div class="container p-relative py-8" style="z-index: 2;">
         <div class="row mt-3">
-            <div class="col-md-10"></div>
-            <div class="col-md-1">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6"></div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-right">
                 <a href="../index.html">
-                <button class="btn-home px-5">Home</button>
+                <button class="border-0 border-primary py-3 btn-gainsboro-light px-5 mb-4">Home</button>
                 </a>
             </div>
         </div>
-        <div class="row mx-5 my-1 ">
-            <div class="col-md-12">
+        <div class="row px-5 px-md-0 my-1">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="row box-login bg-white p-4" style="box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.09);border-radius: 20px;">
-                    <div class="col-md-6 card-left p-3 center">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 card-left p-3 center">
                         <div class="w-100 text-center p-relative text-white" style="top: 42%;">
                             <h1 class="h">MedicTab</h1>
                             <p class="p" style="font-size: 20px;">Best Solution for your health</p>
                         </div>
                     </div>
-                    <div class="col-md-6 card-right bg-white">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 card-right bg-white">
                         <form action="" class="pt-4">
                             <h1>Login</h1>
                             <p class="pt-3">Email or Username</p>
@@ -51,7 +52,7 @@
                             </div>
                             <button class="btn-primary  mt-5 login-button bold"  style="font-size: 16px">Login</button>
                             <hr class="w-90 my-2">
-                            <button class="btn-regist login-button py-2 bold" style="font-size: 16px">Register</button>
+                            <button type="button" class="btn-regist login-button py-2 bold" onclick="window.location.href = 'register.html'" style="font-size: 16px">Register</button>
                         </form>
                         <center>
                         <p class="mt-6  pr-4 "style="color:  #A4A4A4;">
@@ -66,5 +67,4 @@
 
         </div>
     </div>
-    <div class="p-absolute" style="width: 50%;height: 40%;right: -20%;bottom: -10%;background:#A1C4F6"></div>
 </body>
