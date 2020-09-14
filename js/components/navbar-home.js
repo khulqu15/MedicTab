@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#nav-toggler').click(function() {
         $('#nav-menu').slideToggle();
-        $('nav').toggleClass('bg-white');
+        $('nav').addClass('bg-white');
         $('.brand-title').toggleClass('text-black');
         $('#nav-toggler i').toggleClass('text-black');
     });

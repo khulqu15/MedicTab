@@ -45,7 +45,7 @@ nav {
     transition: all .3s;
     bottom: 0px;
     text-align: center;
-    background-color: #1D69D6;
+    background-color: #8bb3eb;
 }
 .menu ul li:hover::after {
     width: 80%;

@@ -1,3 +1,5 @@
+/* 100% Murni Asli Codingan dari SideScript Dev */
+
 * {
     box-sizing: border-box !important;
 }
@@ -112,6 +114,19 @@ body {
 }
 .btn-danger:hover {
     background-color: #881616;  
+    box-shadow: 0px .5rem 1rem rgba(10, 10, 10, 0.2);
+}
+.btn-danger-light {
+    background-color: #ffd2d2;
+    color: white;
+    border: none;
+    border-radius: .35rem;
+    transition: all .3s;
+    cursor: pointer;
+    padding: .7rem 1.4rem;
+}
+.btn-danger-light:hover {
+    background-color: #ff9c9c;  
     box-shadow: 0px .5rem 1rem rgba(10, 10, 10, 0.2);
 }
 .btn-primary-light {
@@ -473,6 +488,9 @@ body {
 }
 .bg-danger {
     background-color: #c53737 !important;
+}
+.bg-danger-light {
+    background-color: #ffe1e1 !important;
 }
 .bg-black {
     background-color: black !important;

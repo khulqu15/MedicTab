@@ -17,10 +17,12 @@
     <div class="nav p-relative w-100 bg-white py-3 px-4">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-7 col-xs-8">
-                <div style="display: flex;">
-                    <img src="../img/fav.png" class="p-relative" style="top: -3px;" width="36px" height="36px" alt="">
-                    <h3 class="h p-relative" style="top: 6px;">MedicTab</h3>
-                </div>
+                <a href="../index.html" class="text-black" style="text-decoration: none;">
+                    <div style="display: flex;">
+                        <img src="../img/fav.png" class="p-relative" style="top: -3px;" width="36px" height="36px" alt="">
+                        <h3 class="h p-relative" style="top: 6px;">MedicTab</h3>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-5 col-xs-4 text-right">
                 <button class="h-100 p-relative btn-gainsboro-light rad-md text-primary border-0 px-4" id="toggleSidebar">
@@ -31,12 +33,146 @@
     </div>
     <div class="sidebar-meeting p-fixed bg-white h-100" id="sidebarMain">
         <div class="w-100 text-center">        
-            <div class="w-100 py-4 bg-white text-primary menu-sidebar d-inline-block p-absolute m-0"><i class="fas fa-user"></i></div>
-            <div class="w-100 py-4 bg-white text-primary menu-sidebar d-inline-block p-absolute m-0"><i class="fas fa-comment"></i></div>
-            <div class="w-100 py-4 bg-white text-primary menu-sidebar d-inline-block p-absolute m-0"><i class="fas fa-link"></i></div>            
+            <div id="user-toggle" class="w-100 py-4 bg-gainsboro text-primary menu-sidebar d-inline-block p-absolute m-0"><i class="fas fa-user"></i></div>
+            <div id="chat-toggle" class="w-100 py-4 bg-white text-primary menu-sidebar d-inline-block p-absolute m-0"><i class="fas fa-comment"></i></div>
+        </div>
+        <div id="user-trigger" class="w-100">
+            <div class="w-100 list-doctors pt-6">
+                <div class="w-100 pt-3 pb-2 mt-8 list-doctor-meet">
+                    <a href="profile.html" class="text-black" style="text-decoration: none;">
+                        <div class="row px-3">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div class="profile-meet-doctor rad-circle bg-primary text-center overflow-hidden border-white d-inline-block" style="background-image: url('../img/meeting/meeting.jpg');"></div>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                <p class="p bold">Dr. Indra Jaya</p>
+                                <p style="font-size: .75rem;">Spesialis Covid19</p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-md-2 col-xs-2">
+                                <div class="p-relative text-right">
+                                    <div class="border-0 mx-2 d-inline-block">
+                                        <img src="../img/meeting/mute.png" class="p-relative unmute" height="15px" alt="">
+                                    </div>
+                                    <div class="border-0 mx-2 d-inline-block text-center">
+                                        <img src="../img/meeting/videoOff.png" class="unmute p-relative" height="15px" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="chat-trigger" class="w-100 d-none mt-8">
+            <div class="w-100 chatting-meet pt-6">
+                <div class="w-100 row my-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <div class="w-100 p-2 bg-primary rad shadow-primary p-relative text-white pt-3 pb-3">
+                            <div class="pb-1" style="font-size: 1rem;">Hai Dokter</div>
+                            <div class="p-absolute" style="font-size: .7rem; bottom: 3px;">10:23</div>
+                            <div class="tringle-skew bg-primary p-absolute" style="right: -7px; top: 0px;"></div>
+                            <div class="p-absolute bold" style="font-size: .75rem; top: 5px; right: 13px;">Anda</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 row my-3">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                        <div class="profile-meet-doctor d-inline-block rad-circle bg-primary text-center overflow-hidden border-white d-inline-block" style="width: 30px !important; height: 30px !important; background-image: url('../img/meeting/meeting.jpg');"></div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                        <div class="w-100 p-2 bg-transparent rad p-relative text-black pt-3 pb-3" style="left: -25px;">
+                            <div class="pb-1" style="font-size: 1rem;">Tobangga !</div>
+                            <div class="p-absolute" style="font-size: .7rem; bottom: 3px;">10:23</div>
+                            <div class="p-absolute bold text-primary" style="font-size: .75rem; top: 0px; left: 8px;">Dokter</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 row my-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <div class="w-100 p-2 bg-primary rad shadow-primary p-relative text-white pt-3 pb-3">
+                            <div class="pb-1" style="font-size: 1rem;">Dokter Autis amjinc !</div>
+                            <div class="p-absolute" style="font-size: .7rem; bottom: 3px;">10:23</div>
+                            <div class="tringle-skew bg-primary p-absolute" style="right: -7px; top: 0px;"></div>
+                            <div class="p-absolute bold" style="font-size: .75rem; top: 5px; right: 13px;">Anda</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reply-chat-meet w-100 p-absolute">
+                <div class="row p-2">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <input type="text" class="bg-white p-3 border-0 w-100 rad-md" placeholder="Type your message">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <button class="btn-primary w-100 h-100 rad-md shadow-primary"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-relative">
+                <div class="w-100 p-8 bg-primary video-convers"></div>
+                <div class="p-8 bg-primary-dark video-convers-user p-absolute rad">
+                    <div class="toggle-img-user w-100 px-2 pt-1 p-absolute text-right text-white" style="top: 0; left: 0; font-size: .7rem;">
+                        <i class="mx-1 fas fa-minus" id="minimize-user-cam"></i>
+                        <i class="mx-1 fas fa-times" id="close-user-cam"></i>
+                    </div>
+                    <div class="user-video-convers bg-primary p-absolute rad"></div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="overlay-black p-fixed d-none" id="toggleHideOverlay" style="position: fixed !important; opacity: .5;"></div>
+
+    <div class="nav-bottom p-fixed p-3 pb-2 bg-white w-100" style="z-index: 5;">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 text-center p-relative px-2" style="border-right: 1px solid gainsboro;">
+                <div class="menu-user-toggle pt-1 rad">
+                    <div class="profile-meet-user rad-circle bg-primary overflow-hidden border-white d-inline-block">
+                        <img src="../img/doctors/febri.PNG" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="d-inline-block p-relative ml-2 d-md-none d-inline-block" style="top: -10px;">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="menu-user-meet p-absolute bg-white p-2 rad text-left" style="display: none; font-size: .85rem;">
+                    <ul class="w-100 p-0 m-0" style="list-style-type: none;">
+                        <li class="my-1 p-1 pl-2">Chat Dokter</li>
+                        <li class="my-1 p-1 pl-2">Sapa Dokter</li>
+                        <li class="my-1 p-1 pl-2">Kamera GUI</li>
+                        <li class="my-1 p-1 pl-2">Mute Speaker</li>
+                        <li class="my-1 p-1 pl-2 bg-danger-light">Akhiri Meeting</li>
+                    </ul>
+                    <div class="arrow-down-meet p-absolute" style="bottom: -18px; left: 26px;">
+                        <i class="fas fa-caret-down text-white" style="font-size: 2rem;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+                <div class="w-100 text-center">
+                    <div class="bg-secondary px-4 d-inline-block py-1 rad" style="letter-spacing: 2px;"><h5>15:30</h5></div>
+                    <p class="p" style="font-size: .8rem;">Your Live</p>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="p-absolute d-flex" style="right: 10px;">
+                    <button style="height: 40px; line-height: 22px;" id="btn-mute" class="btn-transparent border-0 mx-2 px-3">
+                        <img id="img-mute" src="../img/meeting/mute.png" class="p-relative unmute" style="top: 3px;" height="17px" alt="">
+                    </button>
+                    <button style="height: 40px; line-height: 22px;" id="btn-video" class="btn-transparent border-0 mx-2 px-3">
+                        <img id="img-video" src="../img/meeting/videoOff.png" class="unmute p-relative" style="top: 3px;" height="17px" alt="">
+                    </button>
+                    <button style="height: 40px; line-height: 22px;" id="btn-dial" class="btn-danger-light border-0 mx-2 px-3">
+                        <img src="../img/meeting/closeDial.png" width="20px" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="../js/jquery-3.5.1.min.js"></script>
 <script src="../js/responsive.js"></script>
@@ -50,6 +186,44 @@
         $('#toggleHideOverlay').click(function() {
             $('#toggleHideOverlay').addClass('d-none');
             $('#sidebarMain').toggleClass('sidebar-meeting-show');
+        });
+        $('.menu-user-toggle').click(function() {
+            $('.menu-user-meet').slideToggle();
+        });
+        $('#btn-mute').click(function() {
+            $('#img-mute').toggleClass('unmute');
+            if($('#img-mute').hasClass('unmute')) {
+                $('#img-mute').attr('src', '../img/meeting/mute.png');
+            } else {
+                $('#img-mute').attr('src', '../img/meeting/unmute.png');
+            }
+        });
+        $('#btn-video').click(function() {
+            $('#img-video').toggleClass('unmute');
+            if($('#img-video').hasClass('unmute')) {
+                $('#img-video').attr('src', '../img/meeting/videoOff.png');
+            } else {
+                $('#img-video').attr('src', '../img/meeting/videoOn.png');
+            }
+        });
+        $('#user-toggle').click(function() {
+            $('#user-trigger').removeClass('d-none');
+            $('#chat-trigger').addClass('d-none');
+            $(this).addClass('bg-gainsboro').removeClass('bg-white');
+            $('#chat-toggle').addClass('bg-white').removeClass('bg-gainsboro');
+        });
+        $('#chat-toggle').click(function() {
+            $('#user-trigger').addClass('d-none');
+            $('#chat-trigger').removeClass('d-none');
+            $(this).addClass('bg-gainsboro').removeClass('bg-white');
+            $('#user-toggle').addClass('bg-white').removeClass('bg-gainsboro');
+        });
+        $('#minimize-user-cam').click(function() {
+            $('.user-video-convers').slideToggle();
+            $('.video-convers-user').toggleClass('video-convers-hide')
+        });
+        $('#close-user-cam').click(function() {
+            $('.video-convers-user').addClass('d-none');
         });
     });
 </script>

@@ -30,8 +30,8 @@
                     <li class="px-3"><a href="index.html" class="nav-link active-menu">Home</a></li>
                     <li class="px-3"><a href="common/consultation.html" class="nav-link">Consultation</a></li>
                     <li class="px-3"><a href="common/meet.html" class="nav-link">Meet</a></li>
-                    <li class="px-3"><a href="common/news.html" class="nav-link">News</a></li>
-                    <li class="px-3"><a href="common/course.html" class="nav-link">Article</a></li>
+                    <li class="px-3"><a href="common/news.html" class="nav-link">Article</a></li>
+                    <li class="px-3"><a href="common/course.html" class="nav-link">Course</a></li>
                     <li class="px-3"><a href="common/shop.html" class="nav-link">Shop</a></li>
                     <div class="px-3 buttons-auth">
                         <button class="border-0 py-2 px-5 btn-white shadow-black" onclick="window.location.href = 'common/login.html'" id="btn-signin">SignIn</button>
@@ -290,7 +290,7 @@
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
-                    <button class="btn btn-primary shadow-primary px-7 py-3 text-white">Selengkapnya <i class="fas fa-caret-right"></i></button>
+                    <button class="btn btn-primary shadow-primary px-7 py-3 text-white"  onclick="window.location.href = 'common/shop.html'">Selengkapnya <i class="fas fa-caret-right"></i></button>
                 </div>
             </div>
         </div>
@@ -328,7 +328,7 @@
                             </div>
                         </div>
                         <div class="text-center w-100 p-absolute" style="left: 0; right: 0; bottom: -10px;">
-                            <button class="btn-primary shadow-primary"><i class="fas fa-search"></i> Cari jadwal</button>
+                            <button class="btn-primary shadow-primary" onclick="window.location.href = 'common/meet.html'"><i class="fas fa-search"></i> Cari jadwal</button>
                         </div>
                     </div>
                 </div>
@@ -368,7 +368,7 @@
                             <h2 class="h">Technology of VR</h2>
                             <p class="p" style="font-size: .85rem;">Lorem ipsum dolor sit amet consectetur. Exercitationem asperiores obcaecati fugiat maxime!</p>
                             <div class="text-right">
-                                <button class="btn shadow-black mt-3 btn-white border-0 px-4 py-2">More Detail <i class="fas fa-caret-right"></i></button>
+                                <button class="btn shadow-black mt-3 btn-white border-0 px-4 py-2" onclick="window.location.href = 'common/myGame/index.html'">More Detail <i class="fas fa-caret-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -489,7 +489,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="text-right">
-                        <button class="btn btn-transparent border-secondary px-6 py-3 bold">See More <i class="fas fa-caret-right"></i></button> 
+                        <button onclick="window.location.href = 'common/course.html'" class="btn btn-transparent border-secondary px-6 py-3 bold">See More <i class="fas fa-caret-right"></i></button> 
                     </div>
                 </div>
             </div>
@@ -612,4 +612,14 @@
 <script src="js/all.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.card-article').click(function() {
+            window.location.href = 'common/news-detail.html'
+        });
+        $('.card-course').click(function() {
+            window.location.href = 'common/course.html'
+        });
+    });
+</script>
 </html>

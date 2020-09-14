@@ -17,7 +17,7 @@ nav {
     transition: all .3s;
 }
 .card-feature:hover {
-    box-shadow: 0px 1.5rem 2rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.25);
     transform: translateY(-16px);
 }
 .doctor-wal1 {
@@ -75,11 +75,11 @@ nav {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 0px;
+    top: 0;
     border-radius: 2.5rem;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
     background: white;
 }
 
@@ -224,8 +224,8 @@ nav {
 }
 .card-body:hover .card-shop-p {
     position: relative;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     opacity: 1;
     visibility: visible;
 }
@@ -242,12 +242,12 @@ nav {
 
 .card-course:hover {
     cursor: pointer;
-    box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
 }
 
 .shadow-search {
-    box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
 }
 .btn-search-article {
     width: 70px;
@@ -367,17 +367,17 @@ nav {
 }
 .dropdown-chat-toggle {
     z-index: 0;
-    top: 0px;
+    top: 0;
     padding: .5rem .65rem;
     border-radius: 16px;
     opacity: 0;
     transition: all .3s;
-    right: 0px;
+    right: 0;
     background-color: white;
 }
 
 .text-chat:hover .dropdown-chat-toggle {
-    right: 0px;
+    right: 0;
     opacity: 1;
     background-color: rgb(241, 241, 241) !important;
 }
@@ -404,8 +404,8 @@ nav {
 }
 
 .arrow-up-dropdown {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 10px solid rgb(255, 255, 255);
@@ -416,8 +416,8 @@ nav {
 #toggleChat {
     bottom: 0;
     left: 0;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 #chatList {
     position: relative;
@@ -447,7 +447,7 @@ nav {
 .button-close-hide {
     top: 12px;
     right: 12px;
-    bottom: 0px;
+    bottom: 0;
     width: 30px;
     text-align: center;
     line-height: 30px;
@@ -472,20 +472,20 @@ nav {
 }
 
 .card-doctors {
-    box-shadow: 0px 11px 11px -6px rgba(10, 10, 10, 0.1);
+    box-shadow: 0 11px 11px -6px rgba(10, 10, 10, 0.1);
     position: relative;
     cursor: pointer;
     transition: all .3s;
 }
 .card-doctors:hover {
     transform: translateY(-3px);
-    box-shadow: 0px 11px 11px -4px rgba(10, 10, 10, 0.2);
+    box-shadow: 0 11px 11px -4px rgba(10, 10, 10, 0.2);
 
 }
 .img-card-doctors {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 150px;
     overflow: hidden;
     background-color: #1DD693;
 }
@@ -493,7 +493,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 150px;
     right: 0;
     transition: all .3s;
     background-position: center;
@@ -542,17 +542,17 @@ nav {
 }
 .card-meet {
     position: relative;
-    box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
     transition: all .3s;
 }
 .card-meet:hover {
     transform: translateY(-2px);
-    box-shadow: 0px .5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
 }
 .card-meet::after {
     content: '';
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 0;
     width: 10px;
     height: 100%;
@@ -683,7 +683,7 @@ nav {
         right: -1000px;
         margin-top: 5rem !important;
         height: 87%;
-        bottom: 0px !important;
+        bottom: 0 !important;
         transition: all .3s;
         overflow-y: auto;
     }
@@ -709,7 +709,7 @@ nav {
         z-index: 100;
         margin-top: 5rem !important;
         transition: all .3s;
-        bottom: 0px !important;
+        bottom: 0 !important;
         right: -1000px;
         height: 87%;
         overflow-y: auto;
@@ -717,7 +717,7 @@ nav {
     .card-meet::after {
         content: '';
         position: absolute;
-        left: 0px;
+        left: 0;
         top: 0;
         width: 100%;
         height: 10px;
@@ -814,7 +814,7 @@ nav {
         left: -1000px;
     }
     .menu-course-detail-show {
-        left: 0px;
+        left: 0;
     }
     .toggle-menu-course {
         display: inline-block;
@@ -847,23 +847,23 @@ nav {
 .o-article {
     box-sizing: border-box;
     transition: all .3s;
-    box-shadow: 0px .25rem .5rem rgba(10, 10, 10, 0.1);
+    box-shadow: 0 .25rem .5rem rgba(10, 10, 10, 0.1);
 }
 .o-article:hover {
-    box-shadow: 0px .35rem .7rem rgba(10, 10, 10, 0.15);
+    box-shadow: 0 .35rem .7rem rgba(10, 10, 10, 0.15);
     transform: translateY(-4px);
     cursor: pointer;
 }
 .o-article:hover .card-other-article {
     transform: translateY(-20px);
-    box-shadow: 0px .5rem .7rem rgba(10, 10, 10, 0.15);
+    box-shadow: 0 .5rem .7rem rgba(10, 10, 10, 0.15);
 }
 .card-main-article:hover .img-article {
     opacity: .7;
     transform: scale(1.05);
 }
 .img-jumbotron {
-    opacity: .5;
+    opacity: .35;
 }
 .menu-news-widget {
     transition: all .3s;
@@ -907,7 +907,7 @@ nav {
     }
     .menu-news-widget-show {
         transition: all .3s;
-        left: 0px;
+        left: 0;
     }
     .menu-news-point-show {
         transition: all .3s;
@@ -1021,7 +1021,7 @@ nav {
     width: 90px;
     max-height: 100px;
     background-color: white;
-    box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
     top: 65px;
     left: 10px;
     overflow-y: auto;
@@ -1058,7 +1058,7 @@ nav {
     background-color: #999999;
     border: none;
     color: black;
-    box-shadow: 0px .5rem 1rem rgba(10, 10, 10, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(10, 10, 10, 0.2);
 }
 .card-left{
     background: linear-gradient(196.78deg, rgba(29, 105, 214, 0.62) 11.58%, rgba(29, 214, 147, 0.53) 98.61%), url(../img/course/login.png);
@@ -1131,20 +1131,20 @@ nav {
     right: -1000px;
     transition: all .3s;
     top: 0;
-    z-index: 10;
+    z-index: 15;
     width: 300px;
-    box-shadow: 0px .5rem 1.3rem rgba(10, 10, 10, 0.1);
+    box-shadow: 0 .5rem 1.3rem rgba(10, 10, 10, 0.1);
 }
 .sidebar-meeting-show {
     transition: all .3s;
     right: 0;
 }
 #toggleHideOverlay {
-    z-index: 0;
+    z-index: 10;
 }
 .menu-sidebar {
     background-color: white;
-    width: 33.33% !important;
+    width: 50% !important;
     transition: all .3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -1156,9 +1156,94 @@ nav {
     left: 0;
 }
 .menu-sidebar:nth-child(2) {
-    left: 33.33%;
+    left: 50%;
 }
-.menu-sidebar:nth-child(3) {
-    right: 0;
+.list-doctor-meet {
+    transition: all .3s;
+    background-color: white;
+    cursor: pointer;
 }
-
+.list-doctor-meet:hover {
+    background-color: rgb(242, 242, 242);
+}
+.profile-meet-doctor {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+}
+.video-convers {
+    height: 470px;
+    background-image: url('../img/meeting/meeting.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.video-convers-user {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    transition: all .3s;
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 220px;
+    right: 20px;
+}
+.video-convers-hide {
+    height: 22px;
+}
+.user-video-convers {
+    top: 22px;
+    width: 150px;
+    height: 90%;
+    transition: all .3s;
+    right: 0px;
+    background-image: url('../img/doctors/febri.PNG');
+    background-size: cover;
+    background-position: center;
+}
+.nav-bottom {
+    bottom: 0;
+}
+.profile-meet-user {
+    width: 35px;
+    height: 35px;
+}
+.menu-user-meet {
+    max-height: 300px;
+    width: 250px;
+    box-shadow: 0px .3rem .5rem rgba(0, 0, 0, 0.05);
+    bottom: 55px;
+}
+.menu-user-toggle {
+    transition: all .3s;
+    background-color: white;
+    cursor: pointer;
+} 
+.menu-user-toggle:hover {
+    background-color: rgb(238, 238, 238);
+}
+.menu-user-meet ul li {
+    transition: all .3s;
+    background-color: white;
+    border-radius: 4px;
+}
+.menu-user-meet ul li:hover {
+    background-color: rgb(240, 240, 240);
+}
+.tringle-skew {
+    width: 20px;
+    height: 20px;
+    transform: skew(-35deg) !important;
+    border-radius: 3px;
+}
+.chatting-meet {
+    height: 81.5%;
+    width: 100%;
+    position: absolute;
+    overflow-y: auto;
+}
+.reply-chat-meet {
+    bottom: 0;
+    height: 10%;
+    background-color: rgba(235, 235, 235, 0.8);
+}
