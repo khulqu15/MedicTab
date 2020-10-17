@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medictab | Game</title>
+    <link rel="shortcut icon" href="../../img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/components/navbar.css">
+    <link rel="stylesheet" href="../../css/components/footer.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/all.min.css">
+    <link rel="stylesheet" href="../../css/animate.min.css">
+    <link rel="stylesheet" href="../../css/other.css">
+</head>
+<body>
+   
+    <div class="container-lg py-3">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <img src="../../img/game/medicGame.png" width="50px" alt="">
+                <h3 class="h text-primary">MedicGame</h3>
+                <div class="container py-5">
+                    <div class="text-center mb-5">
+                        <h3 class="h">Temukan item yang benar untuk menjaga Protokol Kesehatan Andy dan Mia</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-left">
+                            <div class="w-100 rad-md bg-primary-light py-4">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center p-relative">
+                                        <img src="../../img/game/ball.png" data-type="ball" id="ball-toggler" class="w-25 togglerImg" alt="">
+                                        <div class="d-check p-absolute">
+                                            <div class="circle-check">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center p-relative">
+                                        <img src="../../img/game/food1.png" data-type="food" id="food-toggler" class="w-25 togglerImg" alt="">
+                                        <div class="d-check p-absolute">
+                                            <div class="circle-check">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center p-relative">
+                                        <img src="../../img/game/handsinitizer.png" data-type="hs" id="hs-toggler" class="w-25 togglerImg" alt="">
+                                        <div class="d-check p-absolute">
+                                            <div class="circle-check">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center p-relative">
+                                        <img src="../../img/game/handsinitizer1.png" data-type="hs1" id="hs1-toggler" class="w-25 togglerImg" alt="">
+                                        <div class="d-check p-absolute">
+                                            <div class="circle-check">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center p-relative">
+                                        <img src="../../img/game/mask.png" data-type="mask" id="mask-toggler" class="w-25 togglerImg" alt="">
+                                        <div class="d-check p-absolute">
+                                            <div class="circle-check">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center p-relative">
+                                        <img src="../../img/game/hat.png" data-type="hat" id="hat-toggler" class="w-25 togglerImg" alt="">
+                                        <div class="d-check p-absolute">
+                                            <div class="circle-check">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-left">
+                            <div class="w-100 rad-md bg-primary py-4">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                        <img src="../../img/game/ball.png" id="ball" data-type="ball" class="triggerImg w-25 unactive" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                        <img src="../../img/game/food1.png" id="food" data-type="food" class="triggerImg w-25 unactive" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                        <img src="../../img/game/handsinitizer.png" id="hs" data-type="hs" class="triggerImg w-25 unactive" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                        <img src="../../img/game/handsinitizer1.png" id="hs1" data-type="hs1" class="triggerImg w-25 unactive" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                        <img src="../../img/game/mask.png" id="mask" data-type="mask" class="triggerImg w-25 unactive" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                        <img src="../../img/game/hat.png" id="hat" data-type="hat" class="triggerImg w-25 unactive" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-lg py-5">
+        <div class="text-center text-primary-light">
+            <h2 class="h">MedicTab</h2>
+            <p class="mt-4">
+                <a href="../../index.html"><span class="mx-3 my-2 text-primary-light d-inline-block d-md-block">Home</span></a>
+                <a href="consultation.html"><span class="mx-3 my-2 text-primary-light d-inline-block d-md-block">Consultation</span></a>
+                <a href="meet.html"><span class="mx-3 my-2 text-primary-light d-inline-block d-md-block">Meet</span></a>
+                <a href="course.html"><span class="mx-3 my-2 text-primary-light d-inline-block d-md-block">Course</span></a>
+                <a href="news.html"><span class="mx-3 my-2 text-primary-light d-inline-block d-md-block">Articles</span></a>
+            </p>
+            <p class="mt-4 icon-footer">
+                <span><a href="https://www.instagram.com/sidescript_dev/"><i class="fab fa-instagram mx-3"></i></a></span>
+                <span><a href="https://web.facebook.com/NulShit83"><i class="fab fa-facebook"></i></a></span>
+                <span><a href="https://github.com/khulqu15/MedicTab"><i class="fab fa-github mx-3"></i></a></span>
+            </p>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-xs-6 text-left">
+                        <p><a href="https://www.figma.com/file/unePMge3PvT8pNuqKOKfhg/MedicTab?node-id=0%3A1" class="text-primary-light" style="text-decoration: none;">See design</a></p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p>
+                            <a href="https://sidescript-dev.herokuapp.com/" class="text-primary-light" style="text-decoration: none;"> @2020 Developed by Sidescript dev</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+<script src="../../js/jquery-3.5.1.min.js"></script>
+<script src="../../js/responsive.js"></script>
+<script src="../../js/components/navbar-white.js"></script>
+<script>
+    $(document).ready(function() {
+        let ball = localStorage.setItem('ball', '0'),
+        food = localStorage.setItem('food', '0'),
+        hs = localStorage.setItem('hs', '0'),
+        hs1 = localStorage.setItem('hs1', '0'),
+        mask = localStorage.setItem('mask', '0'),
+        hat = localStorage.setItem('hat', '0'),
+        mode = localStorage.getItem('mode');
+        if(mode == undefined || mode == null || mode == "null") {
+            mode = localStorage.setItem('mode', 'click')
+        }
+        function checkGame() {
+            ball = localStorage.getItem('ball')
+            food = localStorage.getItem('food')
+            hs = localStorage.getItem('hs')
+            hs1 = localStorage.getItem('hs1')
+            mask = localStorage.getItem('mask')
+            hat = localStorage.getItem('hat')
+            if(food == 0 && hs == 1 && hs1 == 1 && mask == 1 && hat == 0 && ball == 0) {
+                window.location.href = 'respond.html'
+                // alert('true')
+            } else {
+                // alert('false')
+            }
+        }
+        $('.togglerImg').click(function() {
+            let type = $(this).attr('data-type')
+            $(this).toggleClass('check')
+            if($(this).hasClass('check')) {
+                localStorage.setItem(type, '1')
+                $('.triggerImg[data-type="'+ type +'"]').removeClass('unactive')
+                $(this).next('.d-check').show()
+            } else {
+                localStorage.setItem(type, '0')
+                $('.triggerImg[data-type="'+ type +'"]').addClass('unactive')
+                $(this).next('.d-check').hide()
+            }
+            checkGame()
+        })
+    });
+</script>
+</html>

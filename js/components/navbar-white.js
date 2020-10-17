@@ -26,4 +26,7 @@ $(document).ready(function() {
             $('#btn-signup').removeClass('scrolled-btn-signup');
         }
     });
+    $('.cursor-nav').click(function() {
+        window.location.href = '../index.html'
+    })
 });
